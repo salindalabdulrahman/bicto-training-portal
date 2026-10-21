@@ -1,0 +1,279 @@
+2026-10-22 03:55:01.055657 [NOTICE] [21132] [127.0.0.1:37986-15#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:55:46.059899 [NOTICE] [21132] [127.0.0.1:41782#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:55:56.095490 [NOTICE] [21132] [127.0.0.1:41782#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:56:06.052566 [NOTICE] [21132] [127.0.0.1:41782#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:56:22.003947 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:56:32.039129 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:56:36.037703 [NOTICE] [21134] [127.0.0.1:34844#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:56:42.069629 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:56:46.072085 [NOTICE] [21134] [127.0.0.1:34844#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:56:52.052232 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:56:56.002156 [NOTICE] [21134] [127.0.0.1:34844#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:57:02.082641 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:57:12.014736 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] ExtConn timed out while processing.
+2026-10-22 03:57:22.050303 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:57:32.021143 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:57:32.021191 [NOTICE] [21130] [127.0.0.1:53148#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:57:42.050595 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:57:42.050885 [NOTICE] [21130] [127.0.0.1:53148#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:57:52.080821 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:57:52.080960 [NOTICE] [21130] [127.0.0.1:53148#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:58:02.011444 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:58:12.046529 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] ExtConn timed out while processing.
+2026-10-22 03:58:22.088225 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:58:32.029019 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:58:42.066530 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:58:52.097998 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:59:02.029449 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:59:08.056129 [NOTICE] [21134] [127.0.0.1:39574#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:59:12.070199 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] ExtConn timed out while processing.
+2026-10-22 03:59:12.070635 [NOTICE] [21130] [127.0.0.1:44928-1#wordpress2] oops! 503 Service Unavailable
+2026-10-22 03:59:12.070676 [INFO] [21130] [127.0.0.1:44928] Content len: 298, request line: 'POST /wp-admin/admin-ajax.php HTTP/1.1'
+2026-10-22 03:59:18.093206 [NOTICE] [21134] [127.0.0.1:39574#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 03:59:28.033019 [NOTICE] [21134] [127.0.0.1:39574#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:03:37.009974 [NOTICE] [21132] [127.0.0.1:45000#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:03:47.048302 [NOTICE] [21132] [127.0.0.1:45000#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:03:57.068285 [NOTICE] [21132] [127.0.0.1:45000#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:04:07.005034 [NOTICE] [21132] [127.0.0.1:45000#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:04:17.039432 [NOTICE] [21132] [127.0.0.1:45000#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:04:27.074916 [NOTICE] [21132] [127.0.0.1:45000#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:06:23.083444 [NOTICE] [21134] [127.0.0.1:53626#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:06:33.017925 [NOTICE] [21134] [127.0.0.1:53626#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:06:43.049421 [NOTICE] [21134] [127.0.0.1:53626#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:06:53.083875 [NOTICE] [21134] [127.0.0.1:53626#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:07:03.017332 [NOTICE] [21134] [127.0.0.1:53626#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:07:13.049877 [NOTICE] [21134] [127.0.0.1:53626#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:09:26.567952 [NOTICE] [21135] [127.0.0.1:51614#wordpress2] [STDERR] PHP Warning:  Undefined property: WP_Ajax_Upgrader_Skin::$api in /usr/local/lsws/wordpress2/wp-admin/includes/class-theme-upgrader.php on line 160
+2026-10-22 04:09:55.078641 [NOTICE] [21132] [127.0.0.1:43724#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:10:05.016086 [NOTICE] [21132] [127.0.0.1:43724#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:10:15.086289 [NOTICE] [21132] [127.0.0.1:43724#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:10:30.014437 [NOTICE] [21132] [127.0.0.1:41940-4#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:10:30.055244 [NOTICE] [21130] [127.0.0.1:49920-3#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:10:40.046300 [NOTICE] [21132] [127.0.0.1:41940-4#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:10:40.084591 [NOTICE] [21130] [127.0.0.1:49920-3#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:10:50.018222 [NOTICE] [21130] [127.0.0.1:49920-3#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:10:50.046006 [NOTICE] [21132] [127.0.0.1:41940-4#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:11:00.078190 [NOTICE] [21132] [127.0.0.1:41940-4#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:11:00.099311 [NOTICE] [21130] [127.0.0.1:49920-3#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:11:10.010015 [NOTICE] [21132] [127.0.0.1:41940-4#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:11:20.041288 [NOTICE] [21132] [127.0.0.1:41940-4#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:19:11.095707 [NOTICE] [21135] [127.0.0.1:45146#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:19:21.029464 [NOTICE] [21135] [127.0.0.1:45146#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:19:31.063979 [NOTICE] [21135] [127.0.0.1:45146#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:19:41.003349 [NOTICE] [21135] [127.0.0.1:45146#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:19:57.050306 [NOTICE] [21134] [127.0.0.1:40214#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:20:07.084902 [NOTICE] [21134] [127.0.0.1:40214#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:20:17.085463 [NOTICE] [21135] [127.0.0.1:48410#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:20:25.005321 [NOTICE] [21133] [127.0.0.1:48500-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:20:25.056388 [NOTICE] [21137] [127.0.0.1:48498-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:20:37.029705 [NOTICE] [21137] [127.0.0.1:37480-7#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:20:47.046184 [NOTICE] [21137] [127.0.0.1:37480-7#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:20:57.079782 [NOTICE] [21137] [127.0.0.1:37480-7#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:21:07.031492 [NOTICE] [21137] [127.0.0.1:37480-7#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:21:14.029065 [NOTICE] [21135] [127.0.0.1:42932#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:21:14.032269 [NOTICE] [21133] [127.0.0.1:42922#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:21:17.055523 [NOTICE] [21137] [127.0.0.1:37480-7#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:21:23.022982 [NOTICE] [21133] [127.0.0.1:50396-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:21:27.086144 [NOTICE] [21137] [127.0.0.1:37480-7#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:22:22.027277 [NOTICE] [21134] [127.0.0.1:58474#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:22:22.027579 [NOTICE] [21136] [127.0.0.1:58478#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:22:39.078514 [NOTICE] [21135] [127.0.0.1:49020#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:22:49.014437 [NOTICE] [21135] [127.0.0.1:49020#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:22:51.006034 [NOTICE] [21133] [127.0.0.1:54476-2#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:22:52.008377 [NOTICE] [21131] [127.0.0.1:54486#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:22:52.008823 [NOTICE] [21131] [127.0.0.1:54498#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:22:59.048269 [NOTICE] [21135] [127.0.0.1:49020#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:01.037321 [NOTICE] [21133] [127.0.0.1:54476-2#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:02.040576 [NOTICE] [21131] [127.0.0.1:54486#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:02.040612 [NOTICE] [21131] [127.0.0.1:54498#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:09.006533 [NOTICE] [21135] [127.0.0.1:49020#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:11.068047 [NOTICE] [21133] [127.0.0.1:54476-2#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:12.070411 [NOTICE] [21131] [127.0.0.1:54486#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:12.070448 [NOTICE] [21131] [127.0.0.1:54498#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:12.072784 [NOTICE] [21136] [127.0.0.1:53542#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:19.038813 [NOTICE] [21135] [127.0.0.1:49020#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:21.096893 [NOTICE] [21134] [127.0.0.1:47972#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:21.097591 [NOTICE] [21133] [127.0.0.1:54476-2#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:22.099301 [NOTICE] [21131] [127.0.0.1:54486#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:22.099450 [NOTICE] [21131] [127.0.0.1:54498#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:22.099684 [NOTICE] [21136] [127.0.0.1:53542#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:29.070186 [NOTICE] [21135] [127.0.0.1:49020#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:23:31.024660 [NOTICE] [21133] [127.0.0.1:54476-2#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:31.025015 [NOTICE] [21134] [127.0.0.1:47972#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:32.027681 [NOTICE] [21136] [127.0.0.1:53542#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:32.027760 [NOTICE] [21131] [127.0.0.1:54486#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:32.027866 [NOTICE] [21131] [127.0.0.1:54498#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:41.055297 [NOTICE] [21134] [127.0.0.1:47972#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:41.055271 [NOTICE] [21133] [127.0.0.1:54476-2#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:23:42.058690 [NOTICE] [21136] [127.0.0.1:53542#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:42.058661 [NOTICE] [21131] [127.0.0.1:54486#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:23:42.059018 [NOTICE] [21131] [127.0.0.1:54498#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:23:51.085471 [NOTICE] [21133] [127.0.0.1:54476-2#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:51.085569 [NOTICE] [21134] [127.0.0.1:47972#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:52.088928 [NOTICE] [21136] [127.0.0.1:53542#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:23:52.092689 [NOTICE] [21131] [127.0.0.1:54498#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:24:01.012574 [NOTICE] [21134] [127.0.0.1:47972#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:24:01.012610 [NOTICE] [21133] [127.0.0.1:54476-2#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:24:02.015060 [NOTICE] [21136] [127.0.0.1:53542#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:24:02.015335 [NOTICE] [21131] [127.0.0.1:54498#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:24:11.039200 [NOTICE] [21133] [127.0.0.1:54476-2#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:24:11.039179 [NOTICE] [21134] [127.0.0.1:47972#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:24:12.042167 [NOTICE] [21131] [127.0.0.1:54498#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:24:21.064960 [NOTICE] [21133] [127.0.0.1:54476-2#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:24:22.067648 [NOTICE] [21131] [127.0.0.1:54498#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:24:31.093001 [NOTICE] [21133] [127.0.0.1:54476-2#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:24:32.095765 [NOTICE] [21131] [127.0.0.1:54498#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:24:41.018992 [NOTICE] [21133] [127.0.0.1:54476-2#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:24:42.021974 [NOTICE] [21131] [127.0.0.1:54498#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:27:38.066803 [NOTICE] [21135] [127.0.0.1:39462#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:27:38.074524 [NOTICE] [21136] [127.0.0.1:39478#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:27:56.009468 [NOTICE] [21135] [127.0.0.1:37594-3#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:27:58.012307 [NOTICE] [21136] [127.0.0.1:41302#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:28:06.047302 [NOTICE] [21135] [127.0.0.1:37594-3#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:28:08.006115 [NOTICE] [21136] [127.0.0.1:41302#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:28:16.083221 [NOTICE] [21135] [127.0.0.1:37594-3#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:28:18.044166 [NOTICE] [21136] [127.0.0.1:41302#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:28:26.028908 [NOTICE] [21135] [127.0.0.1:37594-3#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:28:34.008409 [NOTICE] [21136] [127.0.0.1:51432#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:28:36.083602 [NOTICE] [21135] [127.0.0.1:37594-3#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:28:46.010933 [NOTICE] [21135] [127.0.0.1:37594-3#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:28:46.063531 [NOTICE] [21136] [127.0.0.1:52182#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:28:56.097860 [NOTICE] [21136] [127.0.0.1:52182#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:29:06.037105 [NOTICE] [21136] [127.0.0.1:52182#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:29:16.069390 [NOTICE] [21136] [127.0.0.1:52182#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:29:27.054523 [NOTICE] [21137] [127.0.0.1:47918#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:29:32.037313 [NOTICE] [21136] [127.0.0.1:47932#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:29:42.074377 [NOTICE] [21136] [127.0.0.1:47932#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:29:52.055667 [NOTICE] [21136] [127.0.0.1:47932#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:30:02.090650 [NOTICE] [21136] [127.0.0.1:47932#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:30:12.006537 [NOTICE] [21136] [127.0.0.1:47932#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:30:22.047797 [NOTICE] [21136] [127.0.0.1:47932#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:32:13.094037 [NOTICE] [21137] [127.0.0.1:36646#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:32:23.025043 [NOTICE] [21137] [127.0.0.1:36646#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:32:33.058252 [NOTICE] [21137] [127.0.0.1:36646#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:32:43.092563 [NOTICE] [21137] [127.0.0.1:36646#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:32:52.672903 [NOTICE] [21137] [127.0.0.1:44264-3#wordpress2] [STDERR] PHP Warning:  Undefined array key "shield-halved" in /usr/local/lsws/wordpress2/wp-content/plugins/elementor/core/page-assets/data-managers/font-icon-svg/font-awesome.php on line 45
+2026-10-22 04:32:52.673257 [NOTICE] [21137] [127.0.0.1:44264-3#wordpress2] [STDERR] PHP Warning:  Trying to access array offset on null in /usr/local/lsws/wordpress2/wp-content/plugins/elementor/core/page-assets/data-managers/font-icon-svg/font-awesome.php on line 48
+2026-10-22 04:32:52.673268 [NOTICE] [21137] [127.0.0.1:44264-3#wordpress2] [STDERR] PHP Warning:  Trying to access array offset on null in /usr/local/lsws/wordpress2/wp-content/plugins/elementor/core/page-assets/data-managers/font-icon-svg/font-awesome.php on line 49
+2026-10-22 04:32:52.673271 [NOTICE] [21137] [127.0.0.1:44264-3#wordpress2] [STDERR] PHP Warning:  Trying to access array offset on null in /usr/local/lsws/wordpress2/wp-content/plugins/elementor/core/page-assets/data-managers/font-icon-svg/font-awesome.php on line 50
+2026-10-22 04:32:53.078726 [NOTICE] [21137] [127.0.0.1:36646#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:33:03.047320 [NOTICE] [21137] [127.0.0.1:36646#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:33:05.085366 [NOTICE] [21137] [127.0.0.1:34620#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:33:15.016077 [NOTICE] [21137] [127.0.0.1:34620#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:33:25.044461 [NOTICE] [21137] [127.0.0.1:34620#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:33:35.073395 [NOTICE] [21137] [127.0.0.1:34620#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:33:58.082057 [NOTICE] [21135] [127.0.0.1:46018#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:34:08.021470 [NOTICE] [21135] [127.0.0.1:46018#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:34:18.049792 [NOTICE] [21135] [127.0.0.1:46018#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:34:28.060327 [NOTICE] [21131] [127.0.0.1:36978#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:34:37.011000 [NOTICE] [21133] [127.0.0.1:59622#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:34:37.036829 [NOTICE] [21135] [127.0.0.1:59600#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:34:38.081844 [NOTICE] [21131] [127.0.0.1:36978#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:34:48.003825 [NOTICE] [21131] [127.0.0.1:36978#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:34:49.076962 [NOTICE] [21133] [127.0.0.1:54442#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:34:58.088073 [NOTICE] [21131] [127.0.0.1:36978#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:34:59.066340 [NOTICE] [21133] [127.0.0.1:54442#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:35:00.070528 [NOTICE] [21133] [127.0.0.1:42150-17#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:35:00.070594 [NOTICE] [21133] [127.0.0.1:42120-18#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:35:08.018085 [NOTICE] [21131] [127.0.0.1:36978#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:35:10.085881 [NOTICE] [21133] [127.0.0.1:42150-17#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:35:10.085932 [NOTICE] [21133] [127.0.0.1:42120-18#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:35:19.013659 [NOTICE] [21133] [127.0.0.1:39534#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:35:20.017334 [NOTICE] [21133] [127.0.0.1:42150-17#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:35:20.017382 [NOTICE] [21133] [127.0.0.1:42120-18#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:35:28.082854 [NOTICE] [21131] [127.0.0.1:56306#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:35:29.082936 [NOTICE] [21135] [127.0.0.1:56308#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:35:30.056468 [NOTICE] [21133] [127.0.0.1:42120-18#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:35:37.079769 [NOTICE] [21133] [127.0.0.1:40712#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:35:40.089690 [NOTICE] [21133] [127.0.0.1:42120-18#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:35:47.014364 [NOTICE] [21133] [127.0.0.1:40712#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:35:50.025708 [NOTICE] [21133] [127.0.0.1:42120-18#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:35:57.053816 [NOTICE] [21133] [127.0.0.1:40712#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:36:00.065130 [NOTICE] [21133] [127.0.0.1:42120-18#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:36:07.019053 [NOTICE] [21133] [127.0.0.1:40712#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:36:10.029931 [NOTICE] [21133] [127.0.0.1:42120-18#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:36:17.050865 [NOTICE] [21133] [127.0.0.1:40712#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:36:20.060341 [NOTICE] [21133] [127.0.0.1:42120-18#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:36:27.079177 [NOTICE] [21133] [127.0.0.1:40712#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:36:30.019418 [NOTICE] [21133] [127.0.0.1:42120-18#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:36:40.050989 [NOTICE] [21133] [127.0.0.1:42120-18#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:36:50.082643 [NOTICE] [21133] [127.0.0.1:42120-18#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:38:38.080641 [NOTICE] [21135] [127.0.0.1:53874#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:38:47.038297 [NOTICE] [21134] [127.0.0.1:60848#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:39:29.031608 [NOTICE] [21137] [127.0.0.1:59726#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:39:29.055985 [NOTICE] [21132] [127.0.0.1:59754#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:39:39.068850 [NOTICE] [21137] [127.0.0.1:59726#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:39:39.080762 [NOTICE] [21135] [127.0.0.1:32896#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:39:39.090339 [NOTICE] [21132] [127.0.0.1:59754#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:39:49.004386 [NOTICE] [21137] [127.0.0.1:59726#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:39:49.013801 [NOTICE] [21135] [127.0.0.1:32896#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:39:49.026808 [NOTICE] [21132] [127.0.0.1:59754#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:39:59.034491 [NOTICE] [21137] [127.0.0.1:59726#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:39:59.044628 [NOTICE] [21135] [127.0.0.1:32896#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:39:59.059336 [NOTICE] [21132] [127.0.0.1:59754#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:40:09.068172 [NOTICE] [21137] [127.0.0.1:59726#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:40:09.091332 [NOTICE] [21132] [127.0.0.1:59754#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:40:19.019098 [NOTICE] [21132] [127.0.0.1:59754#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:40:19.075158 [NOTICE] [21137] [127.0.0.1:59726#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:40:36.015983 [NOTICE] [21135] [127.0.0.1:58450#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:40:36.067927 [NOTICE] [21132] [127.0.0.1:54570#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:40:42.035014 [NOTICE] [21133] [127.0.0.1:58464#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:40:51.049655 [NOTICE] [21135] [127.0.0.1:52680#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:40:51.049699 [NOTICE] [21135] [127.0.0.1:52692#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:40:59.008172 [NOTICE] [21134] [127.0.0.1:46864#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:09.072366 [NOTICE] [21133] [127.0.0.1:42762#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:20.007503 [NOTICE] [21132] [127.0.0.1:57012#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:25.019319 [NOTICE] [21133] [127.0.0.1:57030#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:25.050876 [NOTICE] [21135] [127.0.0.1:57058#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:30.039965 [NOTICE] [21132] [127.0.0.1:57012#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:32.075094 [NOTICE] [21135] [127.0.0.1:39982#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:35.049335 [NOTICE] [21133] [127.0.0.1:57030#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:35.086471 [NOTICE] [21135] [127.0.0.1:57058#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:38.034963 [NOTICE] [21134] [127.0.0.1:57940#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:40.072284 [NOTICE] [21132] [127.0.0.1:57012#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:42.012821 [NOTICE] [21135] [127.0.0.1:39982#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:45.022870 [NOTICE] [21135] [127.0.0.1:57058#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:45.080752 [NOTICE] [21133] [127.0.0.1:57030#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:48.072125 [NOTICE] [21134] [127.0.0.1:57940#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:52.049340 [NOTICE] [21135] [127.0.0.1:39982#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:55.013891 [NOTICE] [21133] [127.0.0.1:57030#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:55.058715 [NOTICE] [21135] [127.0.0.1:57058#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:41:58.006201 [NOTICE] [21134] [127.0.0.1:57940#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:02.079610 [NOTICE] [21135] [127.0.0.1:39982#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:05.043315 [NOTICE] [21133] [127.0.0.1:57030#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:05.089960 [NOTICE] [21135] [127.0.0.1:57058#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:16.043494 [NOTICE] [21135] [127.0.0.1:38672-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:16.043512 [NOTICE] [21132] [127.0.0.1:38680-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:16.043582 [NOTICE] [21132] [127.0.0.1:41912#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:20.050205 [NOTICE] [21137] [127.0.0.1:41928#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:34.018924 [NOTICE] [21132] [127.0.0.1:37010-13#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:35.021807 [NOTICE] [21137] [127.0.0.1:36980-12#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:35.021872 [NOTICE] [21137] [127.0.0.1:36984-11#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:35.088753 [NOTICE] [21135] [127.0.0.1:36994-12#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:35.088789 [NOTICE] [21134] [127.0.0.1:36972-12#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:44.052582 [NOTICE] [21132] [127.0.0.1:37010-13#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:45.023711 [NOTICE] [21134] [127.0.0.1:36972-12#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:45.091852 [NOTICE] [21137] [127.0.0.1:36980-12#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:45.092004 [NOTICE] [21137] [127.0.0.1:36984-11#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:54.092972 [NOTICE] [21132] [127.0.0.1:37010-13#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:55.030424 [NOTICE] [21137] [127.0.0.1:36980-12#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:55.030492 [NOTICE] [21137] [127.0.0.1:36984-11#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:42:55.060738 [NOTICE] [21134] [127.0.0.1:36972-12#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:43:04.030101 [NOTICE] [21132] [127.0.0.1:37010-13#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:43:05.069025 [NOTICE] [21137] [127.0.0.1:36980-12#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:43:05.069079 [NOTICE] [21137] [127.0.0.1:36984-11#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:43:05.097246 [NOTICE] [21134] [127.0.0.1:36972-12#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:43:14.072493 [NOTICE] [21132] [127.0.0.1:37010-13#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:43:15.007313 [NOTICE] [21137] [127.0.0.1:36980-12#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:43:15.007389 [NOTICE] [21137] [127.0.0.1:36984-11#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:43:15.035695 [NOTICE] [21134] [127.0.0.1:36972-12#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:43:20.049268 [NOTICE] [21135] [127.0.0.1:49924#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:43:24.008114 [NOTICE] [21132] [127.0.0.1:37010-13#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:43:25.043374 [NOTICE] [21137] [127.0.0.1:36980-12#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:43:25.043618 [NOTICE] [21137] [127.0.0.1:36984-11#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:43:25.069989 [NOTICE] [21134] [127.0.0.1:36972-12#wordpress2] ExtConn timed out while processing.
+2026-10-22 04:43:36.067396 [NOTICE] [21136] [127.0.0.1:51960-6#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:43:36.067621 [NOTICE] [21136] [127.0.0.1:52022-1#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:43:36.075528 [NOTICE] [21134] [127.0.0.1:52032#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 04:43:47.093106 [NOTICE] [21136] [127.0.0.1:58150#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 06:46:20.737950 [NOTICE] [21132] [127.0.0.1:58166#wordpress2] ExtConn timed out while processing.

@@ -1,0 +1,551 @@
+# Copyright (C) 2026 ScriptsTown
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: PressBook Green 1.3.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/pressbook-green\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-08T10:48:14+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: pressbook-green\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "PressBook Green"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://scriptstown.com/wordpress-themes/pressbook-green/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "PressBook Green is a beautifully designed, clean WordPress theme for news, educational, digital marketing, and green businesses. It is perfect to promote environmental projects, gardening, grass, solar energy, or green products business. It is a fast, minimal, and lightweight theme with a quick loading time that offers a modern and SEO-friendly layout with multiple sidebars, RTL support, eye-catching patterns, flexible options, header and footer block areas, etc. It offers a nice, fresh, and professional fluid typography with great fonts and a classic dark green vibrant colors scheme with high accessibility. The double sidebars have the left and right widgets section to place blocks, advertisement banners, and Google Adsense scripts to display ads that are the best to generate revenue and monetize newsportals, newspapers, journals, magazines, photography, lifestyle, personal blogs, etc. It is optimized for search engines with a good user experience, lots of ad spaces, and a unique structure for sites based on technology, science, travel, consultancy, corporate, agency, or affiliate platforms. Creating a magnificent site was never this easy. With simple customization settings, it can be customized to suit websites dedicated to schools, institutes, university, coaching, academy, etc. Also, creators, bloggers, story writers, editors, freelancers, and vloggers can use it for publishing articles, editorial content, study materials, documentation, images, gallery, documentaries, videos, movies, anime, manga, gaming reviews, and portfolios. The top elements include an accessible multi-level dropdown menu, social links, and a centered branding logo, title, or tagline. It supports WooCommerce for building eCommerce shopping sites, Jetpack infinite scrolling, and popular page builder plugins like Elementor, SiteOrigin, etc. If you are looking for an excellent green theme for WordPress, don't go astray, it is a creative, fully mobile responsive, elegantly developed multipurpose theme for non-profit organizations, startups, recycling centers, birds, animals, or wildlife activists, plants, flowers, fruits, vegetables, foods, and nature lovers to showcase ecological projects."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "ScriptsTown"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://scriptstown.com/"
+msgstr ""
+
+#: functions.php:96
+msgctxt "page title"
+msgid "PressBook Green"
+msgstr ""
+
+#: functions.php:107
+msgctxt "menu title"
+msgid "PressBook Green"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-block-patterns.php:29
+msgid "PressBook"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-block-patterns.php:52
+msgid "4-Columns (No Gap) with Main Heading"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-block-patterns.php:57
+#: inc/classes/class-pressbook-green-block-patterns.php:122
+msgid "PEOPLE WORKING WITH US"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-block-patterns.php:61
+#: inc/classes/class-pressbook-green-block-patterns.php:126
+msgid "Lorem ipsum dolor sit amet. Praesent dapibus, cursus faucibus, eu vulputate magna eros eu erat. Aliquam erat volutpat."
+msgstr ""
+
+#: inc/classes/class-pressbook-green-block-patterns.php:67
+#: inc/classes/class-pressbook-green-block-patterns.php:77
+#: inc/classes/class-pressbook-green-block-patterns.php:87
+#: inc/classes/class-pressbook-green-block-patterns.php:97
+#: inc/classes/class-pressbook-green-block-patterns.php:132
+#: inc/classes/class-pressbook-green-block-patterns.php:142
+#: inc/classes/class-pressbook-green-block-patterns.php:152
+#: inc/classes/class-pressbook-green-block-patterns.php:162
+#: inc/classes/class-pressbook-green-block-patterns.php:188
+#: inc/classes/class-pressbook-green-block-patterns.php:198
+#: inc/classes/class-pressbook-green-block-patterns.php:208
+#: inc/classes/class-pressbook-green-block-patterns.php:233
+#: inc/classes/class-pressbook-green-block-patterns.php:243
+#: inc/classes/class-pressbook-green-block-patterns.php:253
+msgid "RECYCLING"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-block-patterns.php:71
+#: inc/classes/class-pressbook-green-block-patterns.php:81
+#: inc/classes/class-pressbook-green-block-patterns.php:91
+#: inc/classes/class-pressbook-green-block-patterns.php:101
+#: inc/classes/class-pressbook-green-block-patterns.php:136
+#: inc/classes/class-pressbook-green-block-patterns.php:146
+#: inc/classes/class-pressbook-green-block-patterns.php:156
+#: inc/classes/class-pressbook-green-block-patterns.php:166
+msgid "Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, diam."
+msgstr ""
+
+#: inc/classes/class-pressbook-green-block-patterns.php:117
+msgid "4-Columns with Main Heading"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-block-patterns.php:182
+msgid "3-Columns (No Gap) Stack"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-block-patterns.php:192
+#: inc/classes/class-pressbook-green-block-patterns.php:202
+#: inc/classes/class-pressbook-green-block-patterns.php:212
+#: inc/classes/class-pressbook-green-block-patterns.php:237
+#: inc/classes/class-pressbook-green-block-patterns.php:247
+#: inc/classes/class-pressbook-green-block-patterns.php:257
+msgid "Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam."
+msgstr ""
+
+#: inc/classes/class-pressbook-green-block-patterns.php:227
+msgid "3-Columns Stack"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-block-patterns.php:272
+msgid "Banner Green with Title"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-block-patterns.php:277
+msgid "NEED URGENT DONATION FOR"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-block-patterns.php:281
+msgid "PROTECT &amp; CARE OUR ENVIRONMENT"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-block-patterns.php:285
+msgid "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Roboto Serif, translate this to 'off'. Do not translate into your own language.
+#: inc/classes/class-pressbook-green-editor.php:77
+msgctxt "Roboto Serif font (in the editor): on or off"
+msgid "on"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Domine, translate this to 'off'. Do not translate into your own language.
+#: inc/classes/class-pressbook-green-editor.php:83
+msgctxt "Domine font (in the editor): on or off"
+msgid "on"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:63
+msgid "Posts Grid"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:64
+msgid "You can customize the posts grid options in here."
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:80
+msgid "Header Posts Grid"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:81
+msgid "You can customize the header posts grid options in here."
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:107
+msgid "Enable Header Posts Grid"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:133
+msgid "Header Posts Grid Source"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:134
+msgid "Default: All Posts"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:160
+msgid "Header Posts Grid Categories"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:161
+msgid "Select the categories for the posts grid in the header. You can select multiple categories by holding the CTRL key."
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:203
+msgid "Header Posts Grid Tags"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:204
+msgid "Select the tags for the posts grid in the header. You can select multiple tags by holding the CTRL key."
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:246
+msgid "Header Posts Grid Order"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:247
+#: inc/classes/class-pressbook-green-posts-grid-related.php:176
+msgid "Designates the ascending or descending order. Default: Latest First"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:273
+msgid "Header Posts Grid Order By"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:274
+#: inc/classes/class-pressbook-green-posts-grid-related.php:203
+msgid "Sort retrieved related posts by parameter. Default: Random Order"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:299
+#: inc/classes/class-pressbook-green-posts-grid-related.php:228
+msgid "Show Taxonomy On Hover"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:300
+#: inc/classes/class-pressbook-green-posts-grid-related.php:229
+msgid "Whether to show the post category or tag on hover."
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:326
+msgctxt "Maximum Number Of Posts (Grid Layout)"
+msgid "1"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:327
+msgctxt "Maximum Number Of Posts (Grid Layout)"
+msgid "2"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:328
+msgctxt "Maximum Number Of Posts (Grid Layout)"
+msgid "3"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:329
+msgctxt "Maximum Number Of Posts (Grid Layout)"
+msgid "4"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:330
+msgctxt "Maximum Number Of Posts (Grid Layout)"
+msgid "5"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:332
+msgid "Maximum Number Of Posts"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:333
+msgid "You can limit number of posts to be shown. If the number of posts found is less than the maximum limit, then the posts grid layout will adjust automatically in the best possible manner. Default: 4"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:359
+msgctxt "Hide Posts Grid If Less Than or Equal To (Grid Layout)"
+msgid "0"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:360
+msgctxt "Hide Posts Grid If Less Than or Equal To (Grid Layout)"
+msgid "1"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:361
+msgctxt "Hide Posts Grid If Less Than or Equal To (Grid Layout)"
+msgid "2"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:363
+msgid "Hide Posts Grid If Less Than or Equal To"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:364
+msgid "Hide the header posts grid if number of posts found is less than or equal to this number. Default: 1"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:389
+msgid "Zoom On Hover Effect"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:390
+msgid "You can enable or disable the zoom effect on hover over the image."
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:422
+msgid "Show in Front Page"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:443
+msgid "Show in Blog Page"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:464
+msgid "Show in Archive Pages"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:485
+msgid "Show in Posts"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-header.php:506
+msgid "Show in Pages"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-related.php:39
+msgid "Related Posts Grid"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-related.php:40
+msgid "You can customize the related posts grid options in here."
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-related.php:66
+msgid "Enable Related Posts Grid"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-related.php:91
+msgid "Related Posts Title"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-related.php:92
+msgid "You can change the heading of the related posts grid that is shown below the single post content."
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-related.php:118
+msgid "Categories"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-related.php:119
+msgid "Tags"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-related.php:121
+msgid "Related Posts Based On"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-related.php:122
+msgid "Select the source for related posts to display. Default: Categories"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-related.php:148
+msgid "Related Posts Count"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-related.php:149
+msgid "Set the number of related posts. Default: 6"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-related.php:175
+msgid "Related Posts Order"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-related.php:202
+msgid "Related Posts Order By"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid-related.php:257
+msgid "More Related Articles"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:19
+msgid "All Posts"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:20
+msgid "Posts from Selected Categories"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:21
+msgid "Posts from Selected Tags"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:32
+msgctxt "Related Posts Count (Grid Layout)"
+msgid "1"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:33
+msgctxt "Related Posts Count (Grid Layout)"
+msgid "2"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:34
+msgctxt "Related Posts Count (Grid Layout)"
+msgid "3"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:35
+msgctxt "Related Posts Count (Grid Layout)"
+msgid "4"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:36
+msgctxt "Related Posts Count (Grid Layout)"
+msgid "5"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:37
+msgctxt "Related Posts Count (Grid Layout)"
+msgid "6"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:38
+msgctxt "Related Posts Count (Grid Layout)"
+msgid "7"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:39
+msgctxt "Related Posts Count (Grid Layout)"
+msgid "8"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:40
+msgctxt "Related Posts Count (Grid Layout)"
+msgid "9"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:41
+msgctxt "Related Posts Count (Grid Layout)"
+msgid "10"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:42
+msgctxt "Related Posts Count (Grid Layout)"
+msgid "11"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:43
+msgctxt "Related Posts Count (Grid Layout)"
+msgid "12"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:54
+msgid "Latest First"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:55
+msgid "Oldest First"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:66
+msgid "Random Order"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:67
+msgid "Post Date"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-posts-grid.php:68
+msgid "Last Modified Date"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-primarynavbar.php:44
+msgid "Primary Navbar Hover Background Color"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Roboto Serif, translate this to 'off'. Do not translate into your own language.
+#: inc/classes/class-pressbook-green-scripts.php:76
+msgctxt "Roboto Serif font: on or off"
+msgid "on"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Domine, translate this to 'off'. Do not translate into your own language.
+#: inc/classes/class-pressbook-green-scripts.php:82
+msgctxt "Domine font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-siteidentity.php:32
+msgctxt "Default: Logo Size (Small-Screen Devices)"
+msgid "Default: Size 2"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-siteidentity.php:33
+msgctxt "Default: Logo Size (Medium-Screen Devices)"
+msgid "Default: Size 5"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-siteidentity.php:34
+msgctxt "Default: Logo Size (Large-Screen Devices)"
+msgid "Default: Size 5"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-siteidentity.php:36
+msgctxt "Default: Site Title Size (Small-Screen Devices)"
+msgid "Default: Size 3"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-siteidentity.php:37
+msgctxt "Default: Site Title Size (Medium-Screen Devices)"
+msgid "Default: Size 5"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-siteidentity.php:38
+msgctxt "Default: Site Title Size (Large-Screen Devices)"
+msgid "Default: Size 5"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-siteidentity.php:40
+msgctxt "Default: Tagline (Small-Screen Devices)"
+msgid "Default: Size 2"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-siteidentity.php:41
+msgctxt "Default: Tagline (Medium-Screen Devices)"
+msgid "Default: Size 4"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-siteidentity.php:42
+msgctxt "Default: Tagline (Large-Screen Devices)"
+msgid "Default: Size 4"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-siteidentity.php:107
+msgid "Size 6"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-siteidentity.php:108
+msgid "Size 7"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-siteidentity.php:109
+msgid "Size 8"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-upsell.php:34
+#: inc/classes/class-pressbook-green-upsell.php:50
+msgid "Learn More"
+msgstr ""
+
+#: inc/classes/class-pressbook-green-upsell.php:35
+msgid "Premium version also includes header and footer posts carousel with multiple options like autoplay etc. Also, background color, caption color, and many other options are available in our premium version."
+msgstr ""
+
+#: inc/classes/class-pressbook-green-upsell.php:51
+msgid "Premium version also includes related posts carousel along with related posts grid. Also, background color and many other options are available in our premium version."
+msgstr ""
+
+#: single.php:28
+msgid "Previous Post:"
+msgstr ""
+
+#: single.php:30
+msgid "Next Post:"
+msgstr ""
+
+#: template-parts/header/top-navbar.php:18
+msgid "Top Menu"
+msgstr ""
+
+#: template-parts/header/top-navbar.php:34
+msgid "Social Links"
+msgstr ""

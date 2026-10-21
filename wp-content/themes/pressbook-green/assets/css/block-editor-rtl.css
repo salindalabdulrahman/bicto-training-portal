@@ -1,0 +1,36 @@
+.editor-styles-wrapper.editor-styles-wrapper {
+	background: #fff;
+	color: #404040;
+}
+
+.editor-styles-wrapper.editor-styles-wrapper a {
+	color: #255946;
+}
+
+.editor-styles-wrapper.editor-styles-wrapper a:hover,
+.editor-styles-wrapper.editor-styles-wrapper a:focus,
+.editor-styles-wrapper.editor-styles-wrapper a:active {
+	color: #49a760;
+}
+
+/* Block Patterns
+--------------------------------------------- */
+.pb-group-pattern .pb-pattern-cols.pb-no-gap {
+	gap: 0;
+}
+
+.pb-group-pattern .pb-no-t-margin {
+	margin-top: 0 !important;
+}
+
+.pb-group-pattern .pb-no-b-margin {
+	margin-bottom: 0 !important;
+}
+
+.pb-group-pattern .pb-t-margin {
+	margin-top: 1.5rem !important;
+}
+
+.pb-group-pattern .pb-b-margin {
+	margin-bottom: 1.5rem !important;
+}

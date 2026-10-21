@@ -1,0 +1,1055 @@
+/*
+Theme Name: PressBook Green
+Theme URI: https://scriptstown.com/wordpress-themes/pressbook-green/
+Author: ScriptsTown
+Author URI: https://scriptstown.com/
+Description: PressBook Green is a beautifully designed, clean WordPress theme for news, educational, digital marketing, and green businesses. It is perfect to promote environmental projects, gardening, grass, solar energy, or green products business. It is a fast, minimal, and lightweight theme with a quick loading time that offers a modern and SEO-friendly layout with multiple sidebars, RTL support, eye-catching patterns, flexible options, header and footer block areas, etc. It offers a nice, fresh, and professional fluid typography with great fonts and a classic dark green vibrant colors scheme with high accessibility. The double sidebars have the left and right widgets section to place blocks, advertisement banners, and Google Adsense scripts to display ads that are the best to generate revenue and monetize newsportals, newspapers, journals, magazines, photography, lifestyle, personal blogs, etc. It is optimized for search engines with a good user experience, lots of ad spaces, and a unique structure for sites based on technology, science, travel, consultancy, corporate, agency, or affiliate platforms. Creating a magnificent site was never this easy. With simple customization settings, it can be customized to suit websites dedicated to schools, institutes, university, coaching, academy, etc. Also, creators, bloggers, story writers, editors, freelancers, and vloggers can use it for publishing articles, editorial content, study materials, documentation, images, gallery, documentaries, videos, movies, anime, manga, gaming reviews, and portfolios. The top elements include an accessible multi-level dropdown menu, social links, and a centered branding logo, title, or tagline. It supports WooCommerce for building eCommerce shopping sites, Jetpack infinite scrolling, and popular page builder plugins like Elementor, SiteOrigin, etc. If you are looking for an excellent green theme for WordPress, don't go astray, it is a creative, fully mobile responsive, elegantly developed multipurpose theme for non-profit organizations, startups, recycling centers, birds, animals, or wildlife activists, plants, flowers, fruits, vegetables, foods, and nature lovers to showcase ecological projects.
+Template: pressbook
+Version: 1.3.1
+Requires at least: 5.3
+Tested up to: 7.1
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pressbook-green
+Tags: blog, education, news, grid-layout, one-column, two-columns, three-columns, left-sidebar, right-sidebar, block-patterns, block-styles, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, wide-blocks
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography
+# Links & Buttons
+# Block Patterns
+# Top Navbar
+# Site Branding
+# Top Banner
+# Primary Navbar
+# Primary Menu Search
+# Posts Grid
+# Header Posts Grid
+# Related Posts Grid
+# Sidebar Widgets
+# Footer Widgets
+# Go to Top
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	font-family: 'Roboto Serif', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title {
+	font-family: 'Domine', sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Links & Buttons
+--------------------------------------------------------------*/
+a {
+	color: #255946;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #49a760;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.more-link,
+.wp-block-search .wp-block-search__button {
+	background-image: linear-gradient(to left, #5bb070 0%, #3a864d 51%, #5bb070 100%);
+}
+
+.more-link {
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+.entry-title a:hover,
+.entry-title a:focus,
+.entry-title a:active {
+	color: #49a760;
+}
+
+.c-sidebar a:hover,
+.c-sidebar a:focus,
+.c-sidebar a:active {
+	color: #49a760;
+}
+
+.copyright-text {
+	color: #0a0a0a;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.copyright-text a {
+	color: #255430;
+}
+
+.copyright-text a:hover,
+.copyright-text a:focus,
+.copyright-text a:active {
+	color: #0a0a0a;
+}
+
+/*--------------------------------------------------------------
+# Block Patterns
+--------------------------------------------------------------*/
+.pb-group-pattern .pb-pattern-cols.pb-no-gap {
+	gap: 0;
+}
+
+.pb-group-pattern .pb-no-t-margin {
+	margin-top: 0 !important;
+}
+
+.pb-group-pattern .pb-no-b-margin {
+	margin-bottom: 0 !important;
+}
+
+.pb-group-pattern .pb-t-margin {
+	margin-top: 1.5rem !important;
+}
+
+.pb-group-pattern .pb-b-margin {
+	margin-bottom: 1.5rem !important;
+}
+
+/*--------------------------------------------------------------
+# Top Navbar
+--------------------------------------------------------------*/
+.top-navbar {
+	padding: .1em 0;
+	background: linear-gradient(0deg, #5bb070 0%, #3a864d 100%);
+}
+
+.top-menus li {
+	padding: .3rem .6rem;
+	border: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.top-menus {
+		justify-content: center;
+	}
+
+	.top-menus>nav {
+		flex-grow: 0;
+	}
+}
+
+.top-navigation {
+	font-size: .85em;
+}
+
+.social-navigation a .svg-icon {
+	width: 1.65em;
+	height: 1.65em;
+	padding: .15em;
+}
+
+.social-navigation a:hover .svg-icon,
+.social-navigation a:focus .svg-icon,
+.social-navigation a:active .svg-icon {
+	color: #5bb070;
+}
+
+@media screen and (min-width: 768px) {
+	.top-navigation {
+		flex-basis: auto;
+		text-align: initial;
+	}
+
+	.top-navigation .menu {
+		justify-content: center;
+	}
+
+	.social-navigation {
+		text-align: left;
+		flex-basis: auto;
+	}
+
+	.social-navigation .menu {
+		justify-content: center;
+	}
+
+	.social-navigation a .svg-icon {
+		width: 1.6em;
+		height: 1.6em;
+	}
+}
+
+/*--------------------------------------------------------------
+# Site Branding
+--------------------------------------------------------------*/
+.site-branding {
+	padding-top: 1.8em;
+	padding-bottom: 1.9em;
+	text-align: center;
+}
+
+.site-branding .site-logo-title {
+	max-width: 100%;
+	width: 100%;
+	justify-content: center;
+}
+
+.site-branding .has-banner-next-sm {
+	margin-left: 0;
+	margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+	.site-branding .has-banner-next-md {
+		margin-left: 0;
+		margin-bottom: 1.2rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.site-branding .site-branding-wrap {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.site-branding .has-banner-next-lg {
+		margin-left: 0;
+		margin-bottom: 1.2rem;
+	}
+}
+
+.site-branding .site-logo-title:not(.site-logo-only) .custom-logo-link {
+	margin-left: 0;
+	margin-bottom: .7rem;
+}
+
+.site-branding .site-logo-title {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo--sm-size-6 .custom-logo-link img {
+	max-width: 21em;
+	max-height: 5.25em;
+}
+
+.logo--sm-size-7 .custom-logo-link img {
+	max-width: 24em;
+	max-height: 5.75em;
+}
+
+.logo--sm-size-8 .custom-logo-link img {
+	max-width: 27em;
+	max-height: 6.25em;
+}
+
+.site-title--sm-size-6 {
+	font-size: 1.8em;
+}
+
+.site-title--sm-size-7 {
+	font-size: 2.1em;
+}
+
+.site-title--sm-size-8 {
+	font-size: 2.4em;
+}
+
+.tagline--sm-size-6 {
+	font-size: 1.15em;
+}
+
+.tagline--sm-size-7 {
+	font-size: 1.35em;
+}
+
+.tagline--sm-size-8 {
+	font-size: 1.55em;
+}
+
+@media screen and (min-width: 576px) {
+	.logo--md-size-6 .custom-logo-link img {
+		max-width: 21em;
+		max-height: 5.25em;
+	}
+
+	.logo--md-size-7 .custom-logo-link img {
+		max-width: 24em;
+		max-height: 5.75em;
+	}
+
+	.logo--md-size-8 .custom-logo-link img {
+		max-width: 27em;
+		max-height: 6.25em;
+	}
+
+	.site-title--md-size-6 {
+		font-size: 1.8em;
+	}
+
+	.site-title--md-size-7 {
+		font-size: 2.1em;
+	}
+
+	.site-title--md-size-8 {
+		font-size: 2.4em;
+	}
+
+	.tagline--md-size-6 {
+		font-size: 1.15em;
+	}
+
+	.tagline--md-size-7 {
+		font-size: 1.35em;
+	}
+
+	.tagline--md-size-8 {
+		font-size: 1.55em;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.logo--lg-size-6 .custom-logo-link img {
+		max-width: 21em;
+		max-height: 5.25em;
+	}
+
+	.logo--lg-size-7 .custom-logo-link img {
+		max-width: 24em;
+		max-height: 5.75em;
+	}
+
+	.logo--lg-size-8 .custom-logo-link img {
+		max-width: 27em;
+		max-height: 6.25em;
+	}
+
+	.site-title--lg-size-6 {
+		font-size: 1.8em;
+	}
+
+	.site-title--lg-size-7 {
+		font-size: 2.1em;
+	}
+
+	.site-title--lg-size-8 {
+		font-size: 2.4em;
+	}
+
+	.tagline--lg-size-6 {
+		font-size: 1.15em;
+	}
+
+	.tagline--lg-size-7 {
+		font-size: 1.35em;
+	}
+
+	.tagline--lg-size-8 {
+		font-size: 1.55em;
+	}
+}
+
+/*--------------------------------------------------------------
+# Top Banner
+--------------------------------------------------------------*/
+.site-branding .top-banner {
+	margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.site-branding .top-banner {
+		max-width: 100%;
+	}
+}
+
+/*--------------------------------------------------------------
+# Primary Navbar
+--------------------------------------------------------------*/
+.primary-navbar,
+.main-navigation li,
+.main-navigation ul ul li {
+	padding: 0;
+}
+
+.main-navigation:not(.toggled):not(.main-navigation--touch) ul li:hover>ul,
+.main-navigation ul li.focus>ul {
+	top: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.main-navigation .menu>li:first-child {
+		padding: 0 0 0 .2em;
+	}
+
+	.main-navigation .menu>li:not(:first-child) {
+		padding: 0 .2em 0 .2em;
+	}
+
+	.main-navigation ul ul li.menu-item-has-children {
+		padding-left: .4em;
+	}
+
+	.main-navigation:not(.toggled):not(.main-navigation--touch) ul li:hover>ul,
+	.main-navigation ul li.focus>ul {
+		top: 100%;
+	}
+
+	.main-navigation:not(.toggled):not(.main-navigation--touch) ul ul li:hover>ul,
+	.main-navigation ul ul li.focus>ul {
+		top: 0;
+	}
+}
+
+.primary-navbar,
+.main-navigation ul ul {
+	background: #429656;
+}
+
+.primary-menu-toggle .svg-icon {
+	width: 1.7em;
+	height: 1.75em;
+}
+
+.main-navigation-arrow-btn {
+	align-self: stretch;
+}
+
+.main-navigation-arrow-btn .svg-icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: baseline;
+}
+
+.main-navigation a {
+	position: relative;
+	padding: .7em .8em .775em .8em;
+}
+
+.main-navigation .menu>.menu-item>a:hover::before,
+.main-navigation .menu>.menu-item>a:focus::before,
+.main-navigation .menu>.menu-item>a:active::before,
+.main-navigation .menu>.current-menu-ancestor>a::before,
+.main-navigation .menu>.current-menu-parent>a::before {
+	opacity: 1;
+}
+
+.main-navigation .menu .current-menu-ancestor>a,
+.main-navigation .menu .current-menu-item>a,
+.main-navigation .menu .current-menu-parent>a {
+	background: #2c643a;
+}
+
+@media screen and (min-width: 768px) {
+	.main-navigation-arrow-btn {
+		align-self: center;
+	}
+
+	.main-navigation .menu>.current-menu-ancestor>a::before,
+	.main-navigation .menu>.current-menu-parent>a::before {
+		content: "";
+	}
+}
+
+.main-navigation:not(.toggled) li:hover>.main-navigation-arrow-btn,
+.main-navigation li.focus>.main-navigation-arrow-btn,
+.main-navigation .main-navigation-arrow-btn:hover,
+.main-navigation .main-navigation-arrow-btn:active,
+.main-navigation a:hover,
+.main-navigation a:focus,
+.main-navigation a:active {
+	color: #fff;
+	background: #2c643a;
+}
+
+/*--------------------------------------------------------------
+# Primary Menu Search
+--------------------------------------------------------------*/
+.primary-navbar .primary-menu-search .primary-menu-search-toggle {
+	width: 36px;
+	height: 36px;
+	padding: .5em;
+}
+
+.primary-navbar .primary-menu-search-toggle .svg-icon {
+	width: 1.1em;
+	height: 1.1em;
+}
+
+.primary-navbar .main-navigation .primary-menu-search {
+	padding-top: 1.6em;
+	padding-bottom: .8em;
+}
+
+@media screen and (min-width: 768px) {
+	.primary-navbar .main-navigation .primary-menu-search {
+		padding-bottom: 0;
+	}
+}
+
+/*--------------------------------------------------------------
+# Posts Grid
+--------------------------------------------------------------*/
+.pb-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -0.5em;
+	margin-left: -0.5em;
+}
+
+[class^="pb-col-"] {
+	width: 100%;
+	padding-right: .5em;
+	padding-left: .5em;
+}
+
+.pb-col-xs-3 {
+	width: 25%;
+}
+
+.pb-col-xs-4 {
+	width: 33.33333333%;
+}
+
+.pb-col-xs-6 {
+	width: 50%;
+}
+
+@media screen and (min-width: 540px) {
+	.pb-col-sm-3 {
+		width: 25%;
+	}
+
+	.pb-col-sm-4 {
+		width: 33.33333333%;
+	}
+
+	.pb-col-sm-6 {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.pb-col-md-3 {
+		width: 25%;
+	}
+
+	.pb-col-md-4 {
+		width: 33.33333333%;
+	}
+
+	.pb-col-md-6 {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.pb-col-lg-3 {
+		width: 25%;
+	}
+
+	.pb-col-lg-4 {
+		width: 33.33333333%;
+	}
+
+	.pb-col-lg-6 {
+		width: 50%;
+	}
+}
+
+/*--------------------------------------------------------------
+# Header Posts Grid
+--------------------------------------------------------------*/
+.header-posts-grid {
+	margin-top: 1.5em;
+}
+
+.pb-featured-link {
+	height: 170px;
+}
+
+@media screen and (min-width: 320px) {
+	.pb-featured-link {
+		height: 190px;
+	}
+}
+
+@media screen and (min-width: 350px) {
+	.pb-featured-link {
+		height: 200px;
+	}
+}
+
+@media screen and (min-width: 540px) {
+	.pb-featured-grid-1 .header-posts-grid {
+		justify-content: center;
+	}
+
+	.pb-featured-grid-1 .header-posts-grid>div {
+		width: 96%;
+	}
+
+	.pb-featured-grid-1 .pb-featured-link {
+		height: 250px;
+	}
+
+	.pb-featured-grid-2 .pb-featured-link {
+		height: 205px;
+	}
+
+	.pb-featured-grid-3 .header-posts-grid {
+		justify-content: center;
+	}
+
+	.pb-featured-grid-5 .pb-featured-link {
+		height: 265px;
+	}
+
+	.pb-featured-link {
+		height: 180px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.pb-featured-grid-1 .pb-featured-link {
+		height: 300px;
+	}
+
+	.pb-featured-grid-2 .pb-featured-link {
+		height: 235px;
+	}
+
+	.pb-featured-grid-3 .pb-featured-link {
+		height: 170px;
+	}
+
+	.pb-featured-grid-4 .pb-featured-link {
+		height: 220px;
+	}
+
+	.pb-featured-grid-5 .pb-featured-post-0 {
+		height: 100%;
+	}
+
+	.pb-featured-grid-5 .pb-featured-post-0 .pb-featured-link,
+	body.double-sidebar .pb-featured-grid-5 .pb-featured-post-0 .pb-featured-link {
+		height: calc(100% - 1em);
+	}
+
+	.pb-featured-grid-5 .pb-featured-link {
+		height: 150px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.pb-featured-grid-1 .pb-featured-link {
+		height: 340px;
+	}
+
+	.pb-featured-grid-2 .pb-featured-link {
+		height: 290px;
+	}
+
+	.pb-featured-grid-3 .pb-featured-link {
+		height: 200px;
+	}
+
+	.pb-featured-grid-4 .pb-featured-link {
+		height: 170px;
+	}
+
+	.pb-featured-grid-5 .pb-featured-link {
+		height: 180px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	body.double-sidebar .pb-featured-grid-1 .header-posts-grid>div {
+		width: 92%;
+	}
+
+	.pb-featured-grid-1 .pb-featured-link {
+		height: 450px;
+	}
+
+	body.double-sidebar .pb-featured-grid-1 .pb-featured-link {
+		height: 470px;
+	}
+
+	.pb-featured-grid-2 .pb-featured-link {
+		height: 345px;
+	}
+
+	body.double-sidebar .pb-featured-grid-2 .pb-featured-link {
+		height: 365px;
+	}
+
+	.pb-featured-grid-3 .pb-featured-link {
+		height: 230px;
+	}
+
+	body.double-sidebar .pb-featured-grid-3 .pb-featured-link {
+		height: 270px;
+	}
+
+	.pb-featured-grid-4 .pb-featured-link {
+		height: 200px;
+	}
+
+	body.double-sidebar .pb-featured-grid-4 .pb-featured-link {
+		height: 240px;
+	}
+
+	.pb-featured-grid-5 .pb-featured-link {
+		height: 200px;
+	}
+
+	body.double-sidebar .pb-featured-grid-5 .pb-featured-link {
+		height: 220px;
+	}
+}
+
+.pb-featured-link {
+	position: relative;
+	display: block;
+	margin-bottom: 1em;
+	text-decoration: none;
+	background: #e2e2e2;
+	color: inherit;
+	overflow: hidden;
+}
+
+.pb-featured-image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	transition: 1s all ease-out;
+}
+
+.pb-featured-zoom .pb-featured-link:hover .pb-featured-image,
+.pb-featured-zoom .pb-featured-link:focus .pb-featured-image,
+.pb-featured-zoom .pb-featured-link:active .pb-featured-image {
+	transform: scale(1.07);
+}
+
+.pb-featured-title {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	padding: .15em .6em;
+	font-size: .9em;
+	background: rgba(58, 134, 77, 0.67);
+	color: #fff;
+	text-align: center;
+	word-break: break-word;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+
+@media screen and (min-width: 540px) {
+	.pb-featured-title {
+		font-size: .95em;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.pb-featured-title {
+		padding: .05em .35em;
+		font-size: .85em;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.pb-featured-title {
+		padding: .1em .4em;
+		font-size: .95em;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.pb-featured-title {
+		padding: .15em .6em;
+	}
+}
+
+.pb-featured-taxonomy {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1px 6px;
+	font-size: .8em;
+	background: rgba(58, 134, 77, 0.67);
+	color: #fff;
+	opacity: 0;
+	transition: .2s all;
+	-webkit-line-clamp: 1;
+}
+
+.pb-featured-link:hover .pb-featured-taxonomy,
+.pb-featured-link:focus .pb-featured-taxonomy,
+.pb-featured-link:active .pb-featured-taxonomy {
+	opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Related Posts Grid
+--------------------------------------------------------------*/
+.pb-related-posts-title {
+	margin-bottom: 1.5em;
+	padding: .5em 0;
+	border-bottom: 1px solid #e1e1e1;
+	font-size: 1.3em;
+}
+
+.pb-grid-related-link {
+	position: relative;
+	display: block;
+	height: 140px;
+	margin-bottom: 1.5em;
+	text-decoration: none;
+	color: inherit;
+}
+
+.pb-grid-related-link::before {
+	content: '';
+	background: #eeeeee;
+}
+
+.pb-related-post-image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.pb-related-post-image,
+.pb-grid-related-link::before {
+	display: block;
+	width: 100%;
+	height: 100px;
+}
+
+@media screen and (min-width: 320px) {
+
+	.pb-related-post-image,
+	.pb-grid-related-link::before {
+		height: 110px;
+	}
+}
+
+@media screen and (min-width: 350px) {
+	.pb-grid-related-link {
+		height: 160px;
+	}
+
+	.pb-related-post-image,
+	.pb-grid-related-link::before {
+		height: 130px;
+	}
+}
+
+@media screen and (min-width: 400px) {
+	.pb-grid-related-link {
+		height: 180px;
+	}
+
+	.pb-related-post-image,
+	.pb-grid-related-link::before {
+		height: 150px;
+	}
+}
+
+@media screen and (min-width: 450px) {
+	.pb-grid-related-link {
+		height: 205px;
+	}
+
+	.pb-related-post-image,
+	.pb-grid-related-link::before {
+		height: 170px;
+	}
+}
+
+@media screen and (min-width: 450px) {
+	.pb-grid-related-link {
+		height: 220px;
+	}
+
+	.pb-related-post-image,
+	.pb-grid-related-link::before {
+		height: 180px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.pb-grid-related-link {
+		height: 190px;
+	}
+
+	.pb-related-post-image,
+	.pb-grid-related-link::before {
+		height: 150px;
+	}
+
+	body.double-sidebar .pb-related-post-image,
+	body.double-sidebar .pb-grid-related-link::before {
+		height: 140px;
+	}
+}
+
+.pb-related-post-title,
+.pb-related-post-taxonomy {
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+
+.pb-related-post-title {
+	margin-top: .5em;
+	font-size: .85em;
+	-webkit-line-clamp: 2;
+}
+
+.pb-related-post-taxonomy {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1px 6px;
+	font-size: .75em;
+	background: rgba(58, 134, 77, 0.45);
+	color: #fff;
+	opacity: 0;
+	transition: .2s all;
+	-webkit-line-clamp: 1;
+}
+
+.pb-grid-related-link:hover .pb-related-post-taxonomy,
+.pb-grid-related-link:focus .pb-related-post-taxonomy,
+.pb-grid-related-link:active .pb-related-post-taxonomy {
+	opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Sidebar Widgets
+--------------------------------------------------------------*/
+.c-sidebar .widget .widget-title::after,
+.c-sidebar .widget_block h1:first-child::after,
+.c-sidebar .widget_block h2:first-child::after,
+.c-sidebar .widget_block h3:first-child::after {
+	background: #49a760;
+}
+
+/*--------------------------------------------------------------
+# Footer Widgets
+--------------------------------------------------------------*/
+.footer-widgets {
+	color: #0a0a0a;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.footer-widgets-wrap {
+	border-bottom-color: #cecece;
+}
+
+.footer-widgets .widget {
+	margin: 0 0 1.7em;
+}
+
+.footer-widgets a {
+	color: #255430;
+}
+
+.footer-widgets a:hover,
+.footer-widgets a:focus,
+.footer-widgets a:active {
+	color: #0a0a0a;
+}
+
+.footer-widgets .widget .wp-calendar-table table,
+.footer-widgets .widget .wp-calendar-table th,
+.footer-widgets .widget .wp-calendar-table td {
+	border-color: #cecece;
+}
+
+.footer-widgets .widget .widget-title,
+.footer-widgets .widget_block h1:first-child,
+.footer-widgets .widget_block h2:first-child,
+.footer-widgets .widget_block h3:first-child {
+	position: relative;
+	margin-bottom: 1.4em;
+	padding-bottom: .7em;
+}
+
+.footer-widgets .widget .widget-title::after,
+.footer-widgets .widget_block h1:first-child::after,
+.footer-widgets .widget_block h2:first-child::after,
+.footer-widgets .widget_block h3:first-child::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: -1px;
+	width: 40px;
+	height: 2px;
+	background: #255430;
+}
+
+.footer-widgets .widget li::before {
+	content: "\25B8";
+	display: inline-block;
+	width: 1em;
+	margin-left: 5px;
+	font-weight: bold;
+	color: #255430;
+}
+
+/*--------------------------------------------------------------
+# Go to Top
+--------------------------------------------------------------*/
+.go-to-top:hover,
+.go-to-top:focus {
+	background: linear-gradient(0deg, #49a760 0%, #255946 100%);
+}
+
+.go-to-top:focus {
+	box-shadow: 0px 0px 3px #49a760;
+}
+
+.go-to-top:active {
+	background: #49a760;
+}
