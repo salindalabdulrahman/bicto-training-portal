@@ -112,3 +112,13 @@ add_filter( 'pressbook_welcome_menu_title', 'pressbook_green_welcome_menu_title'
  * Recommended plugins.
  */
 require get_stylesheet_directory() . '/inc/recommended-plugins.php';
+
+/**
+ * Enqueue custom homepage styles for the Bicto portal landing page.
+ */
+function pressbook_green_bicto_homepage_styles() {
+	if ( is_home() || is_front_page() ) {
+		wp_enqueue_style( 'pressbook-green-bicto-home', get_stylesheet_directory_uri() . '/assets/css/bicto-home.css', array(), PRESSBOOK_GREEN_VERSION );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'pressbook_green_bicto_homepage_styles' );
