@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Illustration of a laptop with a document and a security shield">
+<rect width="640" height="400" fill="#e3f1e8"/>
+<circle cx="110" cy="330" r="130" fill="#cfe7d8"/>
+<rect x="140" y="90" width="360" height="215" rx="12" fill="#255430"/>
+<rect x="154" y="104" width="332" height="187" rx="5" fill="#fff"/>
+<rect x="176" y="126" width="150" height="14" fill="#357a47"/>
+<rect x="176" y="154" width="240" height="8" fill="#cfd8d3"/><rect x="176" y="172" width="210" height="8" fill="#cfd8d3"/><rect x="176" y="190" width="225" height="8" fill="#cfd8d3"/><rect x="176" y="208" width="170" height="8" fill="#cfd8d3"/><rect x="176" y="226" width="200" height="8" fill="#cfd8d3"/>
+<path d="M410 120l48 16v38c0 32-20 52-48 64-28-12-48-32-48-64v-38z" fill="#357a47"/>
+<path d="M391 178l15 15 30-32" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M100 305h440l-24 38H124z" fill="#2c643a"/><rect x="270" y="305" width="100" height="8" rx="4" fill="#255430"/>
+</svg>

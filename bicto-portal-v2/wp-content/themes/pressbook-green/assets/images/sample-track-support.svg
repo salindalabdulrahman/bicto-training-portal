@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Illustration of a computer connected to a network, with a wrench">
+<rect width="640" height="400" fill="#e3f1e8"/>
+<circle cx="520" cy="320" r="130" fill="#cfe7d8"/>
+<g stroke="#357a47" stroke-width="5" fill="none"><path d="M320 120V70M320 70H140V120M320 70h180v50"/></g>
+<rect x="105" y="115" width="70" height="46" rx="6" fill="#2c643a"/><rect x="285" y="115" width="70" height="46" rx="6" fill="#2c643a"/><rect x="465" y="115" width="70" height="46" rx="6" fill="#2c643a"/>
+<circle cx="140" cy="138" r="7" fill="#5bb070"/><circle cx="320" cy="138" r="7" fill="#5bb070"/><circle cx="500" cy="138" r="7" fill="#5bb070"/>
+<path d="M320 200V161" stroke="#357a47" stroke-width="5"/>
+<rect x="220" y="200" width="200" height="130" rx="10" fill="#255430"/>
+<rect x="232" y="212" width="176" height="96" rx="4" fill="#fff"/>
+<rect x="246" y="226" width="80" height="8" fill="#357a47"/><rect x="246" y="244" width="140" height="6" fill="#cfd8d3"/><rect x="246" y="258" width="120" height="6" fill="#cfd8d3"/><rect x="246" y="272" width="130" height="6" fill="#cfd8d3"/>
+<rect x="300" y="330" width="40" height="12" fill="#255430"/><rect x="270" y="342" width="100" height="10" rx="5" fill="#255430"/>
+<g transform="translate(455 250) rotate(40)"><rect x="-8" y="-10" width="16" height="110" rx="8" fill="#357a47"/><path d="M-26 -62a26 26 0 1 1 52 0v28h-14v-22a12 12 0 0 0-24 0v22h-14z" fill="#357a47"/></g>
+</svg>

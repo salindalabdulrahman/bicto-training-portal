@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Illustration of a website layout in a browser window">
+<rect width="640" height="400" fill="#e3f1e8"/>
+<circle cx="540" cy="90" r="120" fill="#cfe7d8"/>
+<rect x="90" y="60" width="460" height="280" rx="12" fill="#fff" stroke="#255430" stroke-width="6"/>
+<path d="M90 72a12 12 0 0 1 12-12h436a12 12 0 0 1 12 12v32H90z" fill="#255430"/>
+<circle cx="116" cy="82" r="6" fill="#5bb070"/><circle cx="138" cy="82" r="6" fill="#cfe7d8"/><circle cx="160" cy="82" r="6" fill="#fff"/>
+<rect x="190" y="74" width="240" height="16" rx="8" fill="#3a864d"/>
+<rect x="112" y="124" width="416" height="56" fill="#357a47"/>
+<rect x="130" y="142" width="150" height="10" fill="#fff"/><rect x="130" y="160" width="100" height="6" fill="#cfe7d8"/>
+<rect x="112" y="196" width="130" height="90" fill="#e3f1e8"/><rect x="255" y="196" width="130" height="90" fill="#e3f1e8"/><rect x="398" y="196" width="130" height="90" fill="#e3f1e8"/>
+<circle cx="177" cy="226" r="14" fill="#5bb070"/><circle cx="320" cy="226" r="14" fill="#357a47"/><circle cx="463" cy="226" r="14" fill="#2c643a"/>
+<rect x="130" y="252" width="94" height="6" fill="#9db7a6"/><rect x="273" y="252" width="94" height="6" fill="#9db7a6"/><rect x="416" y="252" width="94" height="6" fill="#9db7a6"/>
+<rect x="112" y="302" width="416" height="14" fill="#cfd8d3"/>
+<path d="M478 300l60 20-22 8-8 22z" fill="#255430"/>
+</svg>

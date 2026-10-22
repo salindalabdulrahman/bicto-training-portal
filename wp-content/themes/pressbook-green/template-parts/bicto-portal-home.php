@@ -7,8 +7,10 @@
 
 defined( 'ABSPATH' ) || die();
 
-$login_url    = bicto_login_url();
-$register_url = bicto_register_url();
+$is_logged_in = is_user_logged_in();
+$login_url    = bicto_login_url() ? bicto_login_url() : wp_login_url();
+$register_url = bicto_register_url() ? bicto_register_url() : wp_registration_url();
+$can_register = bicto_registration_open();
 $courses_url  = bicto_courses_url();
 $home         = home_url( '/' );
 $privacy_url  = get_privacy_policy_url();
@@ -17,17 +19,22 @@ $phone        = get_theme_mod( 'bicto_contact_phone', '' );
 $address      = get_theme_mod( 'bicto_contact_address', '' );
 $facebook     = get_theme_mod( 'bicto_social_facebook', '' );
 $levels       = bicto_access_levels();
+$img_base     = get_stylesheet_directory_uri() . '/assets/images/';
 
 /**
- * Create an Account button. Falls back to a clearly labelled, non-clickable
- * state when registration has not been enabled yet.
+ * Create an Account button. Opens the registration modal (the real URL stays as the
+ * no-JS fallback). Hidden for signed-in visitors, and shown as a clearly labelled,
+ * non-clickable state when registration has not been enabled yet.
  *
- * @param string $url   Registration URL (may be empty).
+ * @param string $url   Registration URL (fallback for no-JS / middle-click).
  * @param string $class Button classes.
  */
-$bicto_register_button = static function ( $url, $class ) {
-	if ( $url ) {
-		printf( '<a class="%1$s" href="%2$s">%3$s</a>', esc_attr( $class ), esc_url( $url ), esc_html__( 'Create an Account', 'pressbook-green' ) );
+$bicto_register_button = static function ( $url, $class ) use ( $can_register, $is_logged_in ) {
+	if ( $is_logged_in ) {
+		return;
+	}
+	if ( $can_register ) {
+		printf( '<a class="%1$s" href="%2$s" data-bicto-modal="register">%3$s</a>', esc_attr( $class ), esc_url( $url ), esc_html__( 'Create an Account', 'pressbook-green' ) );
 		return;
 	}
 	printf(
@@ -50,6 +57,7 @@ $icons = array(
 $tracks = array(
 	array(
 		'slug'  => 'basic-digital-literacy',
+		'img'   => 'sample-track-literacy.svg',
 		'icon'  => 'literacy',
 		'title' => __( 'Basic Digital Literacy', 'pressbook-green' ),
 		'desc'  => __( 'Develop essential digital skills, office productivity capabilities, professional email practices, cybersecurity awareness, and safe internet usage.', 'pressbook-green' ),
@@ -62,6 +70,7 @@ $tracks = array(
 	),
 	array(
 		'slug'  => 'web-development-wordpress',
+		'img'   => 'sample-track-web.svg',
 		'icon'  => 'web',
 		'title' => __( 'Web Development & WordPress', 'pressbook-green' ),
 		'desc'  => __( 'Learn how to build, maintain, and manage websites using WordPress and BGOVCMS, where applicable.', 'pressbook-green' ),
@@ -74,6 +83,7 @@ $tracks = array(
 	),
 	array(
 		'slug'  => 'it-support-system-administration',
+		'img'   => 'sample-track-support.svg',
 		'icon'  => 'support',
 		'title' => __( 'IT Support & System Administration', 'pressbook-green' ),
 		'desc'  => __( 'Build practical skills in computer troubleshooting, network configuration, technical support, system maintenance, and approved BGOV support procedures.', 'pressbook-green' ),
@@ -98,8 +108,19 @@ $announcements = bicto_get_announcements( 3 );
 <div class="bicto-topbar">
 	<div class="bicto-topbar-inner">
 		<ul class="bicto-topbar-links">
-			<li><a href="<?php echo esc_url( $login_url ); ?>"><?php esc_html_e( 'Sign In', 'pressbook-green' ); ?></a></li>
-			<li><?php $bicto_register_button( $register_url, 'bicto-top-link' ); ?></li>
+			<?php if ( $is_logged_in ) : ?>
+				<li class="bicto-top-greeting">
+					<?php
+					/* translators: %s: display name of the signed-in user */
+					printf( esc_html__( 'Signed in as %s', 'pressbook-green' ), '<strong>' . esc_html( wp_get_current_user()->display_name ) . '</strong>' );
+					?>
+				</li>
+				<li><a href="<?php echo esc_url( get_edit_profile_url() ); ?>"><?php esc_html_e( 'My Profile', 'pressbook-green' ); ?></a></li>
+				<li><a href="<?php echo esc_url( wp_logout_url( $home ) ); ?>"><?php esc_html_e( 'Sign Out', 'pressbook-green' ); ?></a></li>
+			<?php else : ?>
+				<li><a href="<?php echo esc_url( $login_url ); ?>" data-bicto-modal="login"><?php esc_html_e( 'Sign In', 'pressbook-green' ); ?></a></li>
+				<li><?php $bicto_register_button( $register_url, 'bicto-top-link bicto-top-cta' ); ?></li>
+			<?php endif; ?>
 			<?php if ( $privacy_url ) : ?>
 				<li><a href="<?php echo esc_url( $privacy_url ); ?>"><?php esc_html_e( 'Privacy Policy', 'pressbook-green' ); ?></a></li>
 			<?php endif; ?>
@@ -151,24 +172,28 @@ $announcements = bicto_get_announcements( 3 );
 					<a class="bicto-btn bicto-btn-primary" href="<?php echo esc_url( $courses_url ); ?>"><?php esc_html_e( 'Explore Training Courses', 'pressbook-green' ); ?></a>
 					<?php $bicto_register_button( $register_url, 'bicto-btn bicto-btn-secondary' ); ?>
 				</div>
-				<p class="bicto-signin-line">
-					<?php esc_html_e( 'Already have an account?', 'pressbook-green' ); ?>
-					<a href="<?php echo esc_url( $login_url ); ?>"><?php esc_html_e( 'Sign In', 'pressbook-green' ); ?></a>
-				</p>
+				<?php if ( ! $is_logged_in ) : ?>
+					<p class="bicto-signin-line">
+						<?php esc_html_e( 'Already have an account?', 'pressbook-green' ); ?>
+						<a href="<?php echo esc_url( $login_url ); ?>" data-bicto-modal="login"><?php esc_html_e( 'Sign In', 'pressbook-green' ); ?></a>
+					</p>
+				<?php endif; ?>
 			</div>
 
+			<div class="bicto-hero-side">
+				<figure class="bicto-hero-image">
+					<img src="<?php echo esc_url( $img_base . 'sample-hero-learning.svg' ); ?>" width="640" height="400" fetchpriority="high" decoding="async" alt="<?php esc_attr_e( 'Illustration of learners at a computer training session', 'pressbook-green' ); ?>">
+				</figure>
 			<aside class="bicto-hero-panel" aria-label="<?php esc_attr_e( 'Who the portal is for', 'pressbook-green' ); ?>">
 				<h2><?php esc_html_e( 'Learning for everyone', 'pressbook-green' ); ?></h2>
 				<ul>
-					<li><?php esc_html_e( 'Students and graduates', 'pressbook-green' ); ?></li>
-					<li><?php esc_html_e( 'Government employees and ministry personnel', 'pressbook-green' ); ?></li>
-					<li><?php esc_html_e( 'IT professionals and technical support staff', 'pressbook-green' ); ?></li>
-					<li><?php esc_html_e( 'Teachers, trainers, and educators', 'pressbook-green' ); ?></li>
-					<li><?php esc_html_e( 'Job seekers and private-sector employees', 'pressbook-green' ); ?></li>
-					<li><?php esc_html_e( 'Interested members of the public', 'pressbook-green' ); ?></li>
+					<?php foreach ( bicto_auth_audiences() as $audience ) : ?>
+						<li><?php echo esc_html( $audience['label'] ); ?></li>
+					<?php endforeach; ?>
 				</ul>
 				<p><?php esc_html_e( 'Some training programs may set their own eligibility requirements, which are shown with each program.', 'pressbook-green' ); ?></p>
 			</aside>
+			</div>
 		</div>
 	</section>
 
@@ -187,6 +212,9 @@ $announcements = bicto_get_announcements( 3 );
 					$track_link = $term ? get_category_link( $term ) : '#training-calendar';
 					?>
 					<article class="bicto-track">
+						<figure class="bicto-track-image">
+							<img src="<?php echo esc_url( $img_base . $track['img'] ); ?>" width="640" height="400" loading="lazy" decoding="async" alt="">
+						</figure>
 						<div class="bicto-track-icon"><?php echo $icons[ $track['icon'] ]; // phpcs:ignore WordPress.Security.EscapeOutput -- static trusted SVG. ?></div>
 						<h3><?php echo esc_html( $track['title'] ); ?></h3>
 						<p><?php echo esc_html( $track['desc'] ); ?></p>
@@ -325,7 +353,9 @@ $announcements = bicto_get_announcements( 3 );
 			<div class="bicto-actions bicto-actions-center">
 				<a class="bicto-btn bicto-btn-primary" href="<?php echo esc_url( $courses_url ); ?>"><?php esc_html_e( 'Explore Training Courses', 'pressbook-green' ); ?></a>
 				<?php $bicto_register_button( $register_url, 'bicto-btn bicto-btn-secondary' ); ?>
-				<a class="bicto-btn bicto-btn-ghost" href="<?php echo esc_url( $login_url ); ?>"><?php esc_html_e( 'Sign In', 'pressbook-green' ); ?></a>
+				<?php if ( ! $is_logged_in ) : ?>
+					<a class="bicto-btn bicto-btn-ghost" href="<?php echo esc_url( $login_url ); ?>" data-bicto-modal="login"><?php esc_html_e( 'Sign In', 'pressbook-green' ); ?></a>
+				<?php endif; ?>
 			</div>
 		</div>
 	</section>
@@ -350,12 +380,17 @@ $announcements = bicto_get_announcements( 3 );
 
 		<div class="bicto-footer-column">
 			<h3><?php esc_html_e( 'Portal Access', 'pressbook-green' ); ?></h3>
-			<?php if ( $register_url ) : ?>
-				<a href="<?php echo esc_url( $register_url ); ?>"><?php esc_html_e( 'Create an Account', 'pressbook-green' ); ?></a>
+			<?php if ( $is_logged_in ) : ?>
+				<a href="<?php echo esc_url( get_edit_profile_url() ); ?>"><?php esc_html_e( 'My Profile', 'pressbook-green' ); ?></a>
+				<a href="<?php echo esc_url( wp_logout_url( $home ) ); ?>"><?php esc_html_e( 'Sign Out', 'pressbook-green' ); ?></a>
 			<?php else : ?>
-				<span class="bicto-footer-muted"><?php esc_html_e( 'Create an Account (registration not yet open)', 'pressbook-green' ); ?></span>
+				<?php if ( $can_register ) : ?>
+					<a href="<?php echo esc_url( $register_url ); ?>" data-bicto-modal="register"><?php esc_html_e( 'Create an Account', 'pressbook-green' ); ?></a>
+				<?php else : ?>
+					<span class="bicto-footer-muted"><?php esc_html_e( 'Create an Account (registration not yet open)', 'pressbook-green' ); ?></span>
+				<?php endif; ?>
+				<a href="<?php echo esc_url( $login_url ); ?>" data-bicto-modal="login"><?php esc_html_e( 'Sign In', 'pressbook-green' ); ?></a>
 			<?php endif; ?>
-			<a href="<?php echo esc_url( $login_url ); ?>"><?php esc_html_e( 'Sign In', 'pressbook-green' ); ?></a>
 			<?php if ( $privacy_url ) : ?>
 				<a href="<?php echo esc_url( $privacy_url ); ?>"><?php esc_html_e( 'Privacy Policy', 'pressbook-green' ); ?></a>
 			<?php endif; ?>
@@ -378,3 +413,5 @@ $announcements = bicto_get_announcements( 3 );
 		&copy; <?php echo esc_html( wp_date( 'Y' ) ); ?> Bicto Digital Training Portal. All rights reserved.
 	</div>
 </footer>
+
+<?php get_template_part( 'template-parts/bicto-auth-modals' ); ?>

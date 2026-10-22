@@ -1,0 +1,301 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bicto Digital Training Portal (modal preview)</title>
+<link rel="stylesheet" href="../wp-content/themes/pressbook-green/assets/css/bicto-home.css">
+<link rel="stylesheet" href="../wp-content/themes/pressbook-green/assets/css/bicto-auth.css">
+<style>body{margin:0}</style></head><body class="home">
+<div class="bicto-topbar"><div class="bicto-topbar-inner"><ul class="bicto-topbar-links">
+<li><a href="/wp-login.php" data-bicto-modal="login">Sign In</a></li>
+<li><a class="bicto-top-link bicto-top-cta" href="/wp-login.php?action=register" data-bicto-modal="register">Create an Account</a></li>
+<li><a href="#">Privacy Policy</a></li></ul></div></div>
+<header class="bicto-header"><a class="bicto-brand" href="/"><span class="bicto-brand-mark" aria-hidden="true">BI</span><span class="bicto-brand-title">Bicto Digital Training Portal</span><span class="bicto-brand-tagline">Creating Digitally Empowered Bangsamoro</span></a></header>
+<nav class="bicto-navbar"><div class="bicto-navbar-inner"><div class="bicto-nav"><ul class="bicto-nav-links"><li><a href="#top" aria-current="page">Home</a></li><li><a href="#">Training Courses</a></li><li><a href="#">Training Calendar</a></li><li><a href="#">Announcements</a></li><li><a href="#">About</a></li></ul></div></div></nav>
+<main class="bicto-home-page"><section class="bicto-hero" id="top"><div class="section-shell bicto-hero-inner">
+<div class="bicto-hero-copy"><p class="bicto-kicker">Bangsamoro Information and Communications Technology Office</p><h1>Bicto Digital Training Portal</h1><p class="bicto-tagline">Creating Digitally Empowered Bangsamoro</p>
+<p class="bicto-lede">Official ICT Literacy &amp; E-Governance Training Platform under the Bangsamoro Information and Communications Technology Office (BICTO).</p>
+<div class="bicto-actions"><a class="bicto-btn bicto-btn-primary" href="#">Explore Training Courses</a><a class="bicto-btn bicto-btn-secondary" href="/wp-login.php?action=register" data-bicto-modal="register">Create an Account</a></div>
+<p class="bicto-signin-line">Already have an account? <a href="/wp-login.php" data-bicto-modal="login">Sign In</a></p></div>
+<div class="bicto-hero-side"><figure class="bicto-hero-image"><img src="../wp-content/themes/pressbook-green/assets/images/sample-hero-learning.svg" width="640" height="400" alt=""></figure>
+<aside class="bicto-hero-panel"><h2>Learning for everyone</h2><ul><li>Students and graduates</li><li>Government employees and ministry personnel</li><li>IT professionals and technical support staff</li><li>Teachers, trainers, and educators</li><li>Job seekers and private-sector employees</li><li>Interested members of the public</li></ul><p>Some training programs may set their own eligibility requirements, which are shown with each program.</p></aside></div>
+</div></section></main>
+<!-- ===================== Sign in ===================== -->
+<dialog class="bicto-modal" id="bicto-modal-login" aria-labelledby="bicto-login-title" data-bicto-dialog="login">
+	<div class="bicto-modal-panel">
+		<header class="bicto-modal-head">
+			<div>
+				<p class="bicto-modal-kicker">Welcome back</p>
+				<h2 id="bicto-login-title">Sign In</h2>
+			</div>
+			<button type="button" class="bicto-modal-close" data-bicto-close aria-label="Close sign in"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+		</header>
+
+		<div class="bicto-modal-body">
+			<form class="bicto-form" method="post" action="#" novalidate data-bicto-form="login">
+				<div class="bicto-form-alert" role="alert" hidden></div>
+
+				<div class="bicto-field">
+					<label for="bicto-log">Email address or username</label>
+					<input type="text" id="bicto-log" name="log" autocomplete="username" autocapitalize="none" spellcheck="false" required autofocus aria-describedby="bicto-log-err">
+					<p class="bicto-field-error" id="bicto-log-err" hidden></p>
+				</div>
+
+				<div class="bicto-field">
+					<label for="bicto-pwd">Password</label>
+					<div class="bicto-input-wrap">
+						<input type="password" id="bicto-pwd" name="pwd" autocomplete="current-password" required aria-describedby="bicto-pwd-err">
+						<button type="button" class="bicto-reveal" data-bicto-reveal aria-controls="bicto-pwd" aria-pressed="false" aria-label="Show password"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+					</div>
+					<p class="bicto-field-error" id="bicto-pwd-err" hidden></p>
+				</div>
+
+				<div class="bicto-row-between">
+					<label class="bicto-check-inline"><input type="checkbox" name="rememberme" value="forever"> <span>Keep me signed in</span></label>
+					<a class="bicto-text-link" href="#">Forgot password?</a>
+				</div>
+
+				<button type="submit" class="bicto-btn bicto-btn-primary bicto-btn-block" data-bicto-submit>
+					<span class="bicto-btn-label">Sign In</span>
+				</button>
+			</form>
+
+			
+				<p class="bicto-modal-switch">
+					New to the portal?
+					<a href="#" data-bicto-switch="register">Create an account</a>
+				</p>
+			
+		</div>
+	</div>
+</dialog>
+
+
+<!-- ===================== Registration ===================== -->
+<dialog class="bicto-modal bicto-modal-wide" id="bicto-modal-register" aria-labelledby="bicto-register-title" data-bicto-dialog="register">
+	<div class="bicto-modal-panel">
+		<header class="bicto-modal-head">
+			<div>
+				<p class="bicto-modal-kicker">Bicto Digital Training Portal</p>
+				<h2 id="bicto-register-title">Create an Account</h2>
+			</div>
+			<button type="button" class="bicto-modal-close" data-bicto-close aria-label="Close registration"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+		</header>
+
+		<div class="bicto-modal-body">
+			<form class="bicto-form" method="post" action="#" novalidate data-bicto-form="register">
+				<div class="bicto-form-alert" role="alert" hidden></div>
+				<p class="bicto-form-note">Fields marked with * are required. Registration is free and takes about two minutes.</p>
+
+				<!-- Honeypot: hidden from people, irresistible to bots. -->
+				<div class="bicto-hp" aria-hidden="true">
+					<label>Website <input type="text" name="bicto_website" tabindex="-1" autocomplete="off"></label>
+				</div>
+
+				<fieldset class="bicto-fieldset">
+					<legend><span class="bicto-step-no" aria-hidden="true">1</span>About you</legend>
+					<div class="bicto-grid-2">
+						<div class="bicto-field">
+							<label for="bicto-first">First name <span class="bicto-req" aria-hidden="true">*</span></label>
+							<input type="text" id="bicto-first" name="first_name" autocomplete="given-name" required maxlength="60" aria-describedby="bicto-first-err">
+							<p class="bicto-field-error" id="bicto-first-err" hidden></p>
+						</div>
+						<div class="bicto-field">
+							<label for="bicto-last">Last name <span class="bicto-req" aria-hidden="true">*</span></label>
+							<input type="text" id="bicto-last" name="last_name" autocomplete="family-name" required maxlength="60" aria-describedby="bicto-last-err">
+							<p class="bicto-field-error" id="bicto-last-err" hidden></p>
+						</div>
+					</div>
+					<div class="bicto-grid-2">
+						<div class="bicto-field">
+							<label for="bicto-email">Email address <span class="bicto-req" aria-hidden="true">*</span></label>
+							<input type="email" id="bicto-email" name="email" autocomplete="email" autocapitalize="none" spellcheck="false" required aria-describedby="bicto-email-hint bicto-email-err">
+							<p class="bicto-field-hint" id="bicto-email-hint">You will sign in with this address.</p>
+							<p class="bicto-field-error" id="bicto-email-err" hidden></p>
+						</div>
+						<div class="bicto-field">
+							<label for="bicto-phone">Mobile number <span class="bicto-opt">(optional)</span></label>
+							<input type="tel" id="bicto-phone" name="phone" autocomplete="tel" maxlength="20" aria-describedby="bicto-phone-err">
+							<p class="bicto-field-error" id="bicto-phone-err" hidden></p>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset class="bicto-fieldset" aria-describedby="bicto-audience-err">
+					<legend><span class="bicto-step-no" aria-hidden="true">2</span>I am registering as <span class="bicto-req" aria-hidden="true">*</span></legend>
+					<div class="bicto-choice-grid">
+						
+							<div class="bicto-choice">
+								<input type="radio" name="audience" id="bicto-aud-student" value="student" required>
+								<label for="bicto-aud-student">Students and graduates</label>
+							</div>
+						
+							<div class="bicto-choice">
+								<input type="radio" name="audience" id="bicto-aud-government" value="government" required>
+								<label for="bicto-aud-government">Government employees and ministry personnel</label>
+							</div>
+						
+							<div class="bicto-choice">
+								<input type="radio" name="audience" id="bicto-aud-it" value="it" required>
+								<label for="bicto-aud-it">IT professionals and technical support staff</label>
+							</div>
+						
+							<div class="bicto-choice">
+								<input type="radio" name="audience" id="bicto-aud-educator" value="educator" required>
+								<label for="bicto-aud-educator">Teachers, trainers, and educators</label>
+							</div>
+						
+							<div class="bicto-choice">
+								<input type="radio" name="audience" id="bicto-aud-jobseeker" value="jobseeker" required>
+								<label for="bicto-aud-jobseeker">Job seekers and private-sector employees</label>
+							</div>
+						
+							<div class="bicto-choice">
+								<input type="radio" name="audience" id="bicto-aud-public" value="public" required>
+								<label for="bicto-aud-public">Interested members of the public</label>
+							</div>
+						
+					</div>
+					<p class="bicto-field-error" id="bicto-audience-err" hidden></p>
+
+					<div class="bicto-field bicto-org" data-bicto-org hidden>
+						<label for="bicto-org"><span data-bicto-org-label>Organization</span> <span class="bicto-req" data-bicto-org-req aria-hidden="true" hidden>*</span></label>
+						<input type="text" id="bicto-org" name="organization" autocomplete="organization" maxlength="120" aria-describedby="bicto-org-err">
+						<p class="bicto-field-error" id="bicto-org-err" hidden></p>
+					</div>
+
+					<p class="bicto-callout" data-bicto-gov-note hidden>
+						Government accounts are verified by BICTO. You can sign in right away; trainings restricted to government personnel open once your affiliation is confirmed.
+					</p>
+					<p class="bicto-form-note bicto-eligibility">Some training programs may set their own eligibility requirements, which are shown with each program.</p>
+				</fieldset>
+
+				<fieldset class="bicto-fieldset">
+					<legend><span class="bicto-step-no" aria-hidden="true">3</span>Tracks you are interested in <span class="bicto-opt">(optional)</span></legend>
+					<div class="bicto-chip-list">
+						
+							<label class="bicto-chip">
+								<input type="checkbox" name="tracks[]" value="basic-digital-literacy">
+								<span>Basic Digital Literacy</span>
+							</label>
+						
+							<label class="bicto-chip">
+								<input type="checkbox" name="tracks[]" value="web-development-wordpress">
+								<span>Web Development &amp; WordPress</span>
+							</label>
+						
+							<label class="bicto-chip">
+								<input type="checkbox" name="tracks[]" value="it-support-system-administration">
+								<span>IT Support &amp; System Administration</span>
+							</label>
+						
+					</div>
+				</fieldset>
+
+				<fieldset class="bicto-fieldset">
+					<legend><span class="bicto-step-no" aria-hidden="true">4</span>Secure your account</legend>
+					<div class="bicto-grid-2">
+						<div class="bicto-field">
+							<label for="bicto-reg-pwd">Password <span class="bicto-req" aria-hidden="true">*</span></label>
+							<div class="bicto-input-wrap">
+								<input type="password" id="bicto-reg-pwd" name="pwd" autocomplete="new-password" minlength="10" required aria-describedby="bicto-reg-pwd-hint bicto-reg-pwd-err">
+								<button type="button" class="bicto-reveal" data-bicto-reveal aria-controls="bicto-reg-pwd" aria-pressed="false" aria-label="Show password"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+							</div>
+							<div class="bicto-meter" aria-hidden="true"><span data-bicto-meter></span></div>
+							<p class="bicto-field-hint" id="bicto-reg-pwd-hint">At least 10 characters. <strong data-bicto-strength aria-live="polite"></strong></p>
+							<p class="bicto-field-error" id="bicto-reg-pwd-err" hidden></p>
+						</div>
+						<div class="bicto-field">
+							<label for="bicto-reg-pwd2">Confirm password <span class="bicto-req" aria-hidden="true">*</span></label>
+							<div class="bicto-input-wrap">
+								<input type="password" id="bicto-reg-pwd2" name="pwd2" autocomplete="new-password" required aria-describedby="bicto-reg-pwd2-err">
+							</div>
+							<p class="bicto-field-error" id="bicto-reg-pwd2-err" hidden></p>
+						</div>
+					</div>
+				</fieldset>
+
+				<div class="bicto-field bicto-consent">
+					<label class="bicto-check-inline">
+						<input type="checkbox" name="privacy" value="1" required aria-describedby="bicto-privacy-err">
+						<span>
+							I agree to the collection and use of my information as described in the <a href="#" target="_blank" rel="noopener">Privacy Policy</a>.
+						</span>
+					</label>
+					<p class="bicto-field-error" id="bicto-privacy-err" hidden></p>
+				</div>
+
+				<button type="submit" class="bicto-btn bicto-btn-primary bicto-btn-block" data-bicto-submit>
+					<span class="bicto-btn-label">Create My Account</span>
+				</button>
+			</form>
+
+			<p class="bicto-modal-switch">
+				Already have an account?
+				<a href="#" data-bicto-switch="login">Sign In</a>
+			</p>
+		</div>
+	</div>
+</dialog>
+
+<!-- ===================== Registration confirmation ===================== -->
+<dialog class="bicto-modal" id="bicto-modal-confirm" aria-labelledby="bicto-confirm-title" aria-describedby="bicto-confirm-lede" data-bicto-dialog="confirm">
+	<div class="bicto-modal-panel bicto-modal-confirm">
+		<button type="button" class="bicto-modal-close bicto-modal-close-float" data-bicto-close aria-label="Close confirmation"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+
+		<div class="bicto-confirm-hero">
+			<span class="bicto-check" aria-hidden="true">
+				<svg viewBox="0 0 52 52" width="64" height="64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle class="bicto-check-ring" cx="26" cy="26" r="23"/><path class="bicto-check-tick" d="M15 27l8 8 15-17"/></svg>
+			</span>
+			<p class="bicto-modal-kicker">Registration received</p>
+			<h2 id="bicto-confirm-title" tabindex="-1">Thank you, <span data-bicto-out="firstName"></span>!</h2>
+			<p id="bicto-confirm-lede">Your account has been created. Keep your reference number for any follow-up with BICTO.</p>
+			<p class="bicto-ref">Reference <strong data-bicto-out="reference"></strong></p>
+		</div>
+
+		<div class="bicto-modal-body">
+			<dl class="bicto-summary">
+				<div><dt>Name</dt><dd data-bicto-out="name"></dd></div>
+				<div><dt>Email</dt><dd data-bicto-out="email"></dd></div>
+				<div><dt>Registered as</dt><dd data-bicto-out="audience"></dd></div>
+				<div data-bicto-tracks-row hidden><dt>Interested in</dt><dd data-bicto-out="tracks"></dd></div>
+				<div><dt>Account status</dt><dd><span class="bicto-status" data-bicto-out="statusLabel"></span></dd></div>
+			</dl>
+
+			<h3 class="bicto-next-title">What happens next</h3>
+			<ol class="bicto-next" data-bicto-out="nextSteps"></ol>
+
+			<div class="bicto-modal-actions">
+				<button type="button" class="bicto-btn bicto-btn-primary" data-bicto-switch="login">Sign In Now</button>
+				<button type="button" class="bicto-btn bicto-btn-secondary" data-bicto-close>Back to Homepage</button>
+			</div>
+		</div>
+	</div>
+</dialog>
+
+
+<script>window.bictoAuth={"ajaxUrl": "/wp-admin/admin-ajax.php", "nonce": "abc123", "registerOpen": true, "audiences": {"student": {"orgLabel": "School or university", "orgRequired": false, "access": "public"}, "government": {"orgLabel": "Ministry, office, or agency", "orgRequired": true, "access": "government"}, "it": {"orgLabel": "Organization", "orgRequired": false, "access": "public"}, "educator": {"orgLabel": "School or institution", "orgRequired": false, "access": "public"}, "jobseeker": {"orgLabel": "Company or organization (if any)", "orgRequired": false, "access": "public"}, "public": {"orgLabel": "", "orgRequired": false, "access": "public"}}, "i18n": {"required": "This field is required.", "email": "Enter a valid email address.", "passwordShort": "Use at least 10 characters.", "passwordMatch": "The passwords do not match.", "consent": "Please confirm this to continue.", "network": "We could not reach the server. Check your connection and try again.", "fixErrors": "Please correct the highlighted fields.", "signingIn": "Signing in\u2026", "signedIn": "Signed in. Redirecting\u2026", "registering": "Submitting\u2026", "show": "Show password", "hide": "Hide password", "strength": ["Too short", "Weak", "Fair", "Good", "Strong"]}};</script>
+<script>
+/* DEMO ONLY: stands in for WordPress admin-ajax.php so the modals can be tried without a server. */
+(function(){
+  var real=window.fetch, cfg=window.bictoAuth;
+  window.fetch=function(url,opts){
+    if(String(url).indexOf('admin-ajax.php')<0){return real.apply(this,arguments);}
+    var fd=opts.body, action=fd.get('action');
+    function res(ok,data,status){return new Response(JSON.stringify({success:ok,data:data}),{status:status||200,headers:{'Content-Type':'application/json'}});}
+    return new Promise(function(r){setTimeout(r,800);}).then(function(){
+      if(action==='bicto_login'){
+        return fd.get('pwd')==='demo-password' ? res(true,{redirect:location.href.split('#')[0]}) : res(false,{message:'The email/username or password is incorrect.',fields:{}},401);
+      }
+      var email=(fd.get('email')||'').trim().toLowerCase();
+      if(email==='taken@example.com'){return res(false,{message:'Please correct the highlighted fields.',fields:{email:'An account with this email may already exist. Try signing in or resetting your password.'}},422);}
+      var key=fd.get('audience'), gov=(cfg.audiences[key]||{}).access==='government';
+      var label=document.querySelector('#bicto-aud-'+key+' + label').textContent.trim();
+      var tracks=[].map.call(document.querySelectorAll('input[name="tracks[]"]:checked'),function(i){return i.nextElementSibling.textContent.trim();});
+      var steps=['A confirmation message has been sent to '+email+'.','You can sign in right away with your email address and password.',
+        gov?'Your government affiliation will be verified by BICTO. Trainings that are restricted to government personnel open once this is done.':'Browse the training tracks and calendar, and register for the sessions that fit you.'];
+      return res(true,{reference:'BICTO-'+new Date().getFullYear()+'-00042',firstName:fd.get('first_name'),name:fd.get('first_name')+' '+fd.get('last_name'),email:email,audience:label,tracks:tracks,status:gov?'pending':'active',statusLabel:gov?'Active, verification pending':'Active',nextSteps:steps});
+    });
+  };
+})();
+</script>
+<div style="position:fixed;left:12px;bottom:12px;z-index:50;max-width:340px;padding:10px 14px;background:#fff8dc;border:1px solid #b08900;font:13px/1.5 system-ui,sans-serif;color:#3d3000;box-shadow:0 2px 8px rgba(0,0,0,.2)"><strong>Demo mode (no WordPress).</strong> Sign in with any email and password <code>demo-password</code>. Register with <code>taken@example.com</code> to see a server-side error.</div>
+<script src="../wp-content/themes/pressbook-green/assets/js/bicto-auth.js"></script>
+</body></html>

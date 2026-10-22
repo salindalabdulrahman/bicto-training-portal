@@ -136,6 +136,15 @@ body.admin-bar .bicto-navbar { top: 32px; }
 .bicto-hero-panel li::before { content: "\25B8"; position: absolute; left: 0; color: #cfeedb; }
 .bicto-hero-panel p { margin-top: 16px !important; padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, .3); font-size: .85rem; color: #e6f3ea; }
 
+/* ---------- Sample images ---------- */
+.bicto-hero-side { display: flex; flex-direction: column; gap: 0; min-width: 0; }
+.bicto-hero-image { margin: 0; line-height: 0; border: 1px solid var(--pb-green-deep); border-bottom: 0; }
+.bicto-hero-image img, .bicto-track-image img { display: block; width: 100%; height: auto; }
+.bicto-hero-side .bicto-hero-panel { flex: 1; }
+.bicto-track-image { margin: -24px -24px 20px; line-height: 0; border-bottom: 3px solid var(--pb-green-nav); overflow: hidden; }
+.bicto-track-image img { aspect-ratio: 16 / 9; object-fit: cover; transition: transform .4s ease-out; }
+.bicto-track:hover .bicto-track-image img { transform: scale(1.04); }
+
 /* ---------- Tracks ---------- */
 .bicto-track-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .bicto-track { display: flex; flex-direction: column; border: 1px solid var(--pb-border); padding: 24px; background: #fff; transition: box-shadow .2s, border-color .2s; }
@@ -263,5 +272,46 @@ body.admin-bar .bicto-navbar { top: 32px; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .bicto-btn, .bicto-track { transition: none; }
+  .bicto-btn, .bicto-track, .bicto-track-image img { transition: none; }
+  .bicto-track:hover .bicto-track-image img { transform: none; }
+}
+
+/* =========================================================================
+ * Enhancements (v2): auth entry points, signed-in state, interaction polish
+ * ========================================================================= */
+
+/* Topbar: Create an Account becomes a clear call to action; signed-in greeting. */
+.bicto-topbar-links { align-items: center; }
+.bicto-topbar a.bicto-top-cta {
+  display: inline-block; padding: .1rem .85rem; background: #fff; color: var(--pb-green-dark); font-weight: 700; border-radius: 2px;
+  transition: background-color .15s, color .15s;
+}
+.bicto-topbar a.bicto-top-cta:hover { background: #e3f1e8; color: var(--pb-green-deep); text-decoration: none !important; }
+.bicto-topbar a.bicto-top-cta:focus-visible { outline-color: #fff; }
+.bicto-topbar .is-disabled.bicto-top-cta { background: transparent; color: #fff; }
+.bicto-top-greeting { color: #e6f3ea; }
+.bicto-top-greeting strong { color: #fff; }
+
+/* Hero: a clearer entry point and a little depth. */
+.bicto-hero-inner { border-top: 4px solid var(--pb-green-nav); }
+.bicto-kicker::before { content: ""; display: inline-block; width: 28px; height: 2px; margin: 0 10px 3px 0; background: var(--pb-green-hover); vertical-align: middle; }
+.bicto-hero-image { box-shadow: 0 8px 22px rgba(37, 84, 48, .18); }
+
+/* Buttons and links: tactile hover, no layout shift. */
+.bicto-btn { transition: background-position .3s, background-color .2s, color .2s, transform .15s, box-shadow .15s; }
+.bicto-btn:not(.is-disabled):not(.bicto-btn-ghost):hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(0, 0, 0, .18); }
+.bicto-btn:not(.is-disabled):active { transform: none; box-shadow: none; }
+.bicto-link::after { display: inline-block; transition: transform .15s; }
+.bicto-link:hover::after, .bicto-link:focus-visible::after { transform: translateX(3px); }
+
+/* Cards: lift slightly on hover so they read as interactive. */
+.bicto-track { transition: box-shadow .2s, border-color .2s, transform .2s; }
+.bicto-track:hover { transform: translateY(-2px); }
+.bicto-card { transition: box-shadow .2s, border-color .2s; }
+.bicto-card:hover { box-shadow: 0 3px 10px rgba(0, 0, 0, .1); }
+
+@media (prefers-reduced-motion: reduce) {
+  .bicto-btn:not(.is-disabled):hover, .bicto-track:hover { transform: none; }
+  .bicto-link::after { transition: none; }
+  .bicto-link:hover::after, .bicto-link:focus-visible::after { transform: none; }
 }

@@ -1,0 +1,265 @@
+/*
+ * Bicto Digital Training Portal: sign-in, registration, and confirmation modals.
+ * Reuses the design tokens from bicto-home.css (with fallbacks, so it also works standalone).
+ * Contrast: all text/background pairs here are WCAG AA; errors never rely on colour alone.
+ */
+
+html.bicto-modal-open { overflow: hidden; padding-right: var(--bicto-scrollbar, 0); }
+
+/* ---------- Dialog shell ---------- */
+.bicto-modal {
+  --m-green: var(--pb-green-nav, #357a47);
+  --m-green-dark: var(--pb-green-dark, #2c643a);
+  --m-green-deep: var(--pb-green-deep, #255430);
+  --m-green-soft: #e3f1e8;
+  --m-text: var(--pb-text, #222);
+  --m-muted: var(--pb-muted, #555e66);
+  --m-border: #6f7a82;
+  --m-error: #a4161a;
+
+  width: min(460px, calc(100% - 24px));
+  max-width: none; max-height: calc(100dvh - 24px);
+  margin: auto; padding: 0; border: 0; background: transparent; overflow: visible;
+  color: var(--m-text);
+  font-family: var(--pb-body-font, 'Roboto Serif', Georgia, serif); line-height: 1.6; box-sizing: border-box;
+}
+.bicto-modal-wide { width: min(720px, calc(100% - 24px)); }
+.bicto-modal *, .bicto-modal *::before, .bicto-modal *::after { box-sizing: border-box; }
+.bicto-modal[open] { animation: bicto-pop .22s cubic-bezier(.2, .8, .2, 1); }
+.bicto-modal::backdrop { background: rgba(17, 38, 25, .66); backdrop-filter: blur(3px); }
+.bicto-modal[open]::backdrop { animation: bicto-fade .22s ease-out; }
+@keyframes bicto-pop { from { opacity: 0; transform: translateY(16px) scale(.985); } to { opacity: 1; transform: none; } }
+@keyframes bicto-fade { from { opacity: 0; } to { opacity: 1; } }
+
+.bicto-modal-panel {
+  position: relative; max-height: calc(100dvh - 24px); overflow-y: auto; overscroll-behavior: contain;
+  background: #fff; border-top: 4px solid var(--m-green-dark); box-shadow: 0 24px 60px rgba(0, 0, 0, .35);
+}
+
+.bicto-modal h2, .bicto-modal h3 { font-family: var(--pb-head-font, Domine, Georgia, serif); font-weight: 400; line-height: 1.3; margin: 0; }
+.bicto-modal p { margin: 0; }
+.bicto-modal a { color: var(--pb-green-link, #255946); text-decoration: underline; text-underline-offset: 3px; }
+.bicto-modal a:hover { color: var(--m-green-dark); }
+.bicto-modal :focus-visible { outline: 3px solid #1b1b1b; outline-offset: 2px; }
+
+/* ---------- Header ---------- */
+.bicto-modal-head {
+  position: sticky; top: 0; z-index: 2;
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;
+  padding: 20px 24px 18px; color: #fff;
+  background: linear-gradient(0deg, var(--m-green) 0, var(--m-green-dark) 100%);
+}
+.bicto-modal-head h2 { font-size: clamp(1.3rem, 3.4vw, 1.6rem); text-transform: uppercase; letter-spacing: .01em; color: #fff; }
+.bicto-modal-kicker { text-transform: uppercase; letter-spacing: .08em; font-size: .72rem; font-weight: 700; color: #cfeedb; margin-bottom: 4px !important; }
+
+.bicto-modal-close {
+  flex: none; display: grid; place-items: center; width: 40px; height: 40px; margin: -4px -8px 0 0;
+  border: 0; border-radius: 2px; background: transparent; color: #fff; cursor: pointer; transition: background .15s;
+}
+.bicto-modal-close:hover { background: rgba(255, 255, 255, .18); }
+.bicto-modal-head .bicto-modal-close:focus-visible, .bicto-modal-close-float:focus-visible { outline-color: #fff; }
+.bicto-modal-close-float { position: absolute; top: 10px; right: 10px; z-index: 3; color: var(--m-green-deep); }
+.bicto-modal-close-float:hover { background: rgba(37, 84, 48, .12); }
+.bicto-modal-close-float:focus-visible { outline-color: #1b1b1b; }
+
+.bicto-modal-body { padding: 24px; }
+
+/* ---------- Form ---------- */
+.bicto-form { display: grid; gap: 18px; }
+.bicto-form-note { font-size: .88rem; color: var(--m-muted); }
+.bicto-form-alert {
+  padding: 12px 14px; border: 1px solid var(--m-error); border-left-width: 4px; background: #fdecea;
+  color: #7a0f12; font-size: .93rem; font-weight: 700;
+}
+.bicto-form-alert[hidden] { display: none; }
+
+.bicto-fieldset { display: grid; gap: 16px; min-width: 0; margin: 0; padding: 0; border: 0; }
+.bicto-fieldset + .bicto-fieldset { padding-top: 18px; border-top: 1px solid #e1e1e1; }
+.bicto-fieldset legend {
+  display: block; float: left; width: 100%; padding: 0; margin: 0 0 2px;
+  font-family: var(--pb-head-font, Domine, Georgia, serif); font-size: 1.02rem; color: #222;
+}
+.bicto-fieldset legend + * { clear: both; }
+.bicto-step-no {
+  display: inline-grid; place-items: center; width: 26px; height: 26px; margin-right: 10px; vertical-align: middle;
+  background: var(--m-green); color: #fff; font-family: var(--pb-body-font, serif); font-size: .8rem; font-weight: 700;
+}
+
+.bicto-grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+
+.bicto-field { display: grid; gap: 6px; align-content: start; min-width: 0; }
+.bicto-field > label, .bicto-field > .bicto-input-wrap + .bicto-meter { font-size: .92rem; }
+.bicto-field > label { font-weight: 700; }
+.bicto-field > label.bicto-check-inline { font-weight: 400; }
+.bicto-req { color: var(--m-error); font-weight: 700; }
+.bicto-opt { font-weight: 400; color: var(--m-muted); font-size: .85em; }
+.bicto-field-hint { font-size: .82rem; color: var(--m-muted); }
+.bicto-field-hint strong { font-weight: 700; color: #222; }
+.bicto-field-error { font-size: .85rem; font-weight: 700; color: var(--m-error); }
+.bicto-field-error::before { content: "\26A0\FE0E\00a0"; }
+.bicto-field-error[hidden] { display: none; }
+
+.bicto-modal input[type="text"], .bicto-modal input[type="email"], .bicto-modal input[type="tel"], .bicto-modal input[type="password"] {
+  width: 100%; min-height: 46px; padding: 9px 12px; border: 1px solid var(--m-border); border-radius: 2px; background: #fff;
+  color: var(--m-text); font: inherit; font-size: 1rem; box-shadow: none; transition: border-color .15s, box-shadow .15s;
+}
+.bicto-modal input:hover:not(:focus):not([aria-invalid]) { border-color: #3e464c; }
+.bicto-modal input[type="text"]:focus, .bicto-modal input[type="email"]:focus, .bicto-modal input[type="tel"]:focus, .bicto-modal input[type="password"]:focus {
+  outline: 2px solid transparent; border-color: var(--m-green-dark); box-shadow: 0 0 0 3px rgba(53, 122, 71, .35);
+}
+.bicto-modal input[aria-invalid="true"] { border-color: var(--m-error); box-shadow: inset 4px 0 0 var(--m-error); }
+
+.bicto-input-wrap { position: relative; }
+.bicto-input-wrap input { padding-right: 48px; }
+.bicto-reveal {
+  position: absolute; top: 0; right: 0; width: 46px; height: 100%; display: grid; place-items: center;
+  border: 0; background: transparent; color: var(--m-muted); cursor: pointer;
+}
+.bicto-reveal:hover, .bicto-reveal.is-on { color: var(--m-green-dark); }
+.bicto-reveal.is-on::after { content: ""; position: absolute; width: 22px; height: 2px; background: currentColor; transform: rotate(-40deg); }
+
+/* Password strength meter */
+.bicto-meter { height: 5px; background: #e6e9ec; overflow: hidden; }
+.bicto-meter span { display: block; height: 100%; width: 0; background: var(--m-error); transition: width .2s, background-color .2s; }
+.bicto-meter[data-level="0"] span { background: #a4161a; }
+.bicto-meter[data-level="1"] span { background: #b4570a; }
+.bicto-meter[data-level="2"] span { background: #9a7500; }
+.bicto-meter[data-level="3"] span { background: #3f8a53; }
+.bicto-meter[data-level="4"] span { background: var(--m-green-dark); }
+
+/* Remember me / consent */
+.bicto-row-between { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; font-size: .92rem; }
+.bicto-check-inline { display: flex; align-items: flex-start; gap: 10px; cursor: pointer; font-size: .92rem; }
+.bicto-check-inline input { flex: none; width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--m-green-dark); }
+.bicto-consent { padding: 14px; background: #f4f6f5; border: 1px solid #dde3df; }
+.bicto-text-link { font-weight: 700; }
+
+/* Audience: selectable cards */
+.bicto-choice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.bicto-choice-grid.has-error { outline: 2px solid var(--m-error); outline-offset: 4px; }
+.bicto-choice { position: relative; }
+.bicto-choice input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; z-index: 1; }
+.bicto-choice label {
+  position: relative; display: flex; align-items: center; height: 100%; min-height: 58px; padding: 10px 12px 10px 44px;
+  border: 1px solid var(--m-border); border-radius: 2px; background: #fff; font-size: .9rem; line-height: 1.35;
+  transition: border-color .15s, background-color .15s, box-shadow .15s;
+}
+.bicto-choice label::before {
+  content: ""; position: absolute; left: 14px; top: 50%; width: 18px; height: 18px; margin-top: -9px;
+  border: 2px solid var(--m-border); border-radius: 50%; background: #fff; transition: border-color .15s, box-shadow .15s;
+}
+.bicto-choice:hover label { border-color: var(--m-green-dark); background: #f6fbf8; }
+.bicto-choice input:checked + label { border-color: var(--m-green-dark); background: var(--m-green-soft); box-shadow: inset 0 0 0 1px var(--m-green-dark); font-weight: 700; }
+.bicto-choice input:checked + label::before { border-color: var(--m-green-dark); box-shadow: inset 0 0 0 4px #fff; background: var(--m-green-dark); }
+.bicto-choice input:focus-visible + label { outline: 3px solid #1b1b1b; outline-offset: 2px; }
+
+.bicto-org[hidden] { display: none; }
+.bicto-org { animation: bicto-fade .2s ease-out; }
+.bicto-callout {
+  padding: 12px 14px; border-left: 4px solid #b08900; background: #fbf6e3; color: #4a3a00; font-size: .9rem;
+}
+.bicto-callout[hidden] { display: none; }
+
+/* Track chips */
+.bicto-chip-list { display: flex; flex-wrap: wrap; gap: 10px; }
+.bicto-chip { position: relative; cursor: pointer; }
+.bicto-chip input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.bicto-chip span {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 6px 14px 6px 10px;
+  border: 1px solid var(--m-border); border-radius: 2px; background: #fff; font-size: .9rem; transition: border-color .15s, background-color .15s;
+}
+.bicto-chip span::before {
+  content: ""; width: 16px; height: 16px; border: 2px solid var(--m-border); background: #fff center / 11px no-repeat; flex: none;
+}
+.bicto-chip:hover span { border-color: var(--m-green-dark); }
+.bicto-chip input:checked + span { border-color: var(--m-green-dark); background: var(--m-green-soft); font-weight: 700; }
+.bicto-chip input:checked + span::before {
+  border-color: var(--m-green-dark); background-color: var(--m-green-dark);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 6.5l2.6 2.6L10 3.4'/%3E%3C/svg%3E");
+}
+.bicto-chip input:focus-visible + span { outline: 3px solid #1b1b1b; outline-offset: 2px; }
+
+/* Honeypot */
+.bicto-hp { position: absolute !important; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+/* ---------- Buttons ---------- */
+.bicto-modal .bicto-btn { text-decoration: none; }
+.bicto-modal .bicto-btn-primary {
+  background-image: linear-gradient(to right, var(--m-green) 0, var(--m-green-dark) 51%, var(--m-green) 100%);
+  background-size: 200% auto; color: #fff; border-color: var(--m-green-dark);
+}
+.bicto-modal .bicto-btn-primary:hover:not(:disabled) { background-position: right center; color: #fff; }
+.bicto-modal .bicto-btn-secondary { background: #fff; color: var(--m-green-dark); border-color: var(--m-green-dark); }
+.bicto-modal .bicto-btn-secondary:hover { background: var(--m-green-dark); color: #fff; }
+.bicto-btn-block { width: 100%; }
+.bicto-modal .bicto-btn:disabled { cursor: progress; opacity: .85; }
+.bicto-modal .bicto-btn.is-busy .bicto-btn-label::before {
+  content: ""; display: inline-block; width: 14px; height: 14px; margin-right: 10px; vertical-align: -2px;
+  border: 2px solid rgba(255, 255, 255, .5); border-top-color: #fff; border-radius: 50%; animation: bicto-spin .7s linear infinite;
+}
+@keyframes bicto-spin { to { transform: rotate(360deg); } }
+
+.bicto-modal-switch { margin-top: 20px !important; padding-top: 18px; border-top: 1px solid #e1e1e1; text-align: center; font-size: .93rem; }
+.bicto-modal-switch a { font-weight: 700; }
+
+/* ---------- Confirmation ---------- */
+.bicto-modal-confirm { border-top-color: var(--m-green); }
+.bicto-confirm-hero { padding: 36px 28px 26px; text-align: center; background: linear-gradient(180deg, var(--m-green-soft) 0, #fff 100%); }
+.bicto-confirm-hero h2 { margin-top: 4px !important; font-size: clamp(1.4rem, 4vw, 1.8rem); color: #222; }
+.bicto-confirm-hero h2:focus { outline: none; }
+.bicto-confirm-hero #bicto-confirm-lede { margin: 10px auto 0 !important; max-width: 46ch; color: var(--m-muted); font-size: .95rem; }
+.bicto-confirm-hero .bicto-modal-kicker { color: var(--pb-green-link, #255946); }
+.bicto-check { display: inline-grid; place-items: center; width: 84px; height: 84px; margin-bottom: 14px; border-radius: 50%; background: #fff; color: var(--m-green-dark); box-shadow: 0 0 0 6px rgba(53, 122, 71, .15); }
+.bicto-check-ring { stroke-dasharray: 145; stroke-dashoffset: 145; animation: bicto-draw .6s .1s ease-out forwards; }
+.bicto-check-tick { stroke-dasharray: 40; stroke-dashoffset: 40; animation: bicto-draw .35s .6s ease-out forwards; }
+@keyframes bicto-draw { to { stroke-dashoffset: 0; } }
+.bicto-ref {
+  display: inline-block; margin-top: 16px !important; padding: 6px 14px; border: 1px dashed var(--m-green-dark);
+  background: #fff; font-size: .88rem; color: var(--m-muted);
+}
+.bicto-ref strong { margin-left: 6px; color: var(--m-green-deep); font-size: 1rem; letter-spacing: .04em; font-variant-numeric: tabular-nums; }
+
+.bicto-summary { display: grid; margin: 0; border: 1px solid #e1e1e1; }
+.bicto-summary > div { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 12px; padding: 10px 14px; }
+.bicto-summary > div + div { border-top: 1px solid #e1e1e1; }
+.bicto-summary > div[hidden] { display: none; }
+.bicto-summary dt { font-size: .82rem; font-weight: 700; color: var(--m-muted); text-transform: uppercase; letter-spacing: .04em; padding-top: 2px; }
+.bicto-summary dd { margin: 0; overflow-wrap: anywhere; }
+.bicto-status { display: inline-block; padding: 1px 10px; background: var(--m-green-soft); color: var(--m-green-deep); font-size: .82rem; font-weight: 700; }
+.bicto-status.is-pending { background: #f6ecc8; color: #5c4600; }
+
+.bicto-next-title { margin-top: 24px !important; font-size: 1.05rem; }
+.bicto-next { counter-reset: step; list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 12px; }
+.bicto-next li { counter-increment: step; position: relative; padding-left: 40px; font-size: .93rem; }
+.bicto-next li::before {
+  content: counter(step); position: absolute; left: 0; top: 0; display: grid; place-items: center; width: 28px; height: 28px;
+  border-radius: 50%; background: var(--m-green); color: #fff; font-size: .82rem; font-weight: 700;
+}
+.bicto-modal-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.bicto-modal-actions .bicto-btn { flex: 1 1 180px; }
+
+/* ---------- Small screens: bottom sheets ---------- */
+@media (max-width: 560px) {
+  .bicto-modal, .bicto-modal-wide { width: 100%; max-height: calc(100dvh - 12px); margin: auto 0 0; }
+  .bicto-modal-panel { max-height: calc(100dvh - 12px); }
+  .bicto-modal[open] { animation-name: bicto-sheet; }
+  .bicto-modal-head { padding: 16px 18px 14px; }
+  .bicto-modal-body { padding: 20px 18px 28px; }
+  .bicto-grid-2, .bicto-choice-grid { grid-template-columns: 1fr; }
+  .bicto-summary > div { grid-template-columns: 1fr; gap: 2px; }
+  .bicto-modal-actions .bicto-btn { flex-basis: 100%; }
+  .bicto-confirm-hero { padding: 32px 18px 22px; }
+}
+@keyframes bicto-sheet { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .bicto-modal[open], .bicto-modal[open]::backdrop, .bicto-org { animation: none; }
+  .bicto-check-ring, .bicto-check-tick { animation: none; stroke-dashoffset: 0; }
+  .bicto-meter span, .bicto-modal input, .bicto-choice label { transition: none; }
+  .bicto-modal .bicto-btn.is-busy .bicto-btn-label::before { animation-duration: 1.6s; }
+}
+
+@media (forced-colors: active) {
+  .bicto-modal-panel { border: 2px solid CanvasText; }
+  .bicto-choice input:checked + label, .bicto-chip input:checked + span { outline: 2px solid Highlight; }
+}
