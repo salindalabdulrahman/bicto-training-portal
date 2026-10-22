@@ -95,26 +95,37 @@ $objectives = array(
 $events        = bicto_get_upcoming_events( 6 );
 $announcements = bicto_get_announcements( 3 );
 ?>
-<header class="bicto-header" id="bicto-header">
-	<div class="bicto-header-inner">
-		<a class="bicto-brand" href="<?php echo esc_url( $home ); ?>" aria-label="<?php esc_attr_e( 'Bicto Digital Training Portal, home', 'pressbook-green' ); ?>">
-			<?php if ( has_custom_logo() ) : ?>
-				<?php echo wp_get_attachment_image( get_theme_mod( 'custom_logo' ), 'full', false, array( 'class' => 'bicto-logo', 'alt' => '' ) ); ?>
-			<?php else : ?>
-				<span class="bicto-brand-mark" aria-hidden="true">BI</span>
+<div class="bicto-topbar">
+	<div class="bicto-topbar-inner">
+		<ul class="bicto-topbar-links">
+			<li><a href="<?php echo esc_url( $login_url ); ?>"><?php esc_html_e( 'Sign In', 'pressbook-green' ); ?></a></li>
+			<li><?php $bicto_register_button( $register_url, 'bicto-top-link' ); ?></li>
+			<?php if ( $privacy_url ) : ?>
+				<li><a href="<?php echo esc_url( $privacy_url ); ?>"><?php esc_html_e( 'Privacy Policy', 'pressbook-green' ); ?></a></li>
 			<?php endif; ?>
-			<span class="bicto-brand-copy">
-				<strong>Bicto Digital Training Portal</strong>
-				<span>BICTO &middot; BARMM</span>
-			</span>
-		</a>
+		</ul>
+	</div>
+</div>
 
+<header class="bicto-header" id="bicto-header">
+	<a class="bicto-brand" href="<?php echo esc_url( $home ); ?>" aria-label="<?php esc_attr_e( 'Bicto Digital Training Portal, home', 'pressbook-green' ); ?>">
+		<?php if ( has_custom_logo() ) : ?>
+			<?php echo wp_get_attachment_image( get_theme_mod( 'custom_logo' ), 'full', false, array( 'class' => 'bicto-logo', 'alt' => '' ) ); ?>
+		<?php else : ?>
+			<span class="bicto-brand-mark" aria-hidden="true">BI</span>
+		<?php endif; ?>
+		<span class="bicto-brand-title">Bicto Digital Training Portal</span>
+		<span class="bicto-brand-tagline">Creating Digitally Empowered Bangsamoro</span>
+	</a>
+</header>
+
+<nav class="bicto-navbar" aria-label="<?php esc_attr_e( 'Primary navigation', 'pressbook-green' ); ?>">
+	<div class="bicto-navbar-inner">
 		<button class="bicto-nav-toggle" type="button" aria-expanded="false" aria-controls="bicto-nav">
-			<span class="screen-reader-text"><?php esc_html_e( 'Menu', 'pressbook-green' ); ?></span>
 			<span class="bicto-burger" aria-hidden="true"></span>
+			<span class="bicto-nav-toggle-label"><?php esc_html_e( 'Menu', 'pressbook-green' ); ?></span>
 		</button>
-
-		<nav class="bicto-nav" id="bicto-nav" aria-label="<?php esc_attr_e( 'Primary navigation', 'pressbook-green' ); ?>">
+		<div class="bicto-nav" id="bicto-nav">
 			<ul class="bicto-nav-links">
 				<li><a href="#top" data-spy="top" aria-current="page"><?php esc_html_e( 'Home', 'pressbook-green' ); ?></a></li>
 				<li><a href="#training-courses" data-spy="training-courses"><?php esc_html_e( 'Training Courses', 'pressbook-green' ); ?></a></li>
@@ -122,18 +133,14 @@ $announcements = bicto_get_announcements( 3 );
 				<li><a href="#announcements" data-spy="announcements"><?php esc_html_e( 'Announcements', 'pressbook-green' ); ?></a></li>
 				<li><a href="#about" data-spy="about"><?php esc_html_e( 'About', 'pressbook-green' ); ?></a></li>
 			</ul>
-			<div class="bicto-nav-actions">
-				<a class="bicto-nav-signin" href="<?php echo esc_url( $login_url ); ?>"><?php esc_html_e( 'Sign In', 'pressbook-green' ); ?></a>
-				<?php $bicto_register_button( $register_url, 'bicto-btn bicto-btn-emerald bicto-btn-sm' ); ?>
-			</div>
-		</nav>
+		</div>
 	</div>
-</header>
+</nav>
 
 <main class="bicto-home-page" id="bicto-main">
 
 	<section class="bicto-hero" id="top" aria-labelledby="bicto-hero-title">
-		<div class="bicto-hero-inner">
+		<div class="section-shell bicto-hero-inner">
 			<div class="bicto-hero-copy">
 				<p class="bicto-kicker"><?php esc_html_e( 'Bangsamoro Information and Communications Technology Office', 'pressbook-green' ); ?></p>
 				<h1 id="bicto-hero-title">Bicto Digital Training Portal</h1>
@@ -141,8 +148,8 @@ $announcements = bicto_get_announcements( 3 );
 				<p class="bicto-lede">Official ICT Literacy &amp; E-Governance Training Platform under the Bangsamoro Information and Communications Technology Office (BICTO).</p>
 
 				<div class="bicto-actions">
-					<a class="bicto-btn bicto-btn-gold" href="<?php echo esc_url( $courses_url ); ?>"><?php esc_html_e( 'Explore Training Courses', 'pressbook-green' ); ?></a>
-					<?php $bicto_register_button( $register_url, 'bicto-btn bicto-btn-outline' ); ?>
+					<a class="bicto-btn bicto-btn-primary" href="<?php echo esc_url( $courses_url ); ?>"><?php esc_html_e( 'Explore Training Courses', 'pressbook-green' ); ?></a>
+					<?php $bicto_register_button( $register_url, 'bicto-btn bicto-btn-secondary' ); ?>
 				</div>
 				<p class="bicto-signin-line">
 					<?php esc_html_e( 'Already have an account?', 'pressbook-green' ); ?>
@@ -316,8 +323,8 @@ $announcements = bicto_get_announcements( 3 );
 			<h2 id="bicto-cta-title"><?php esc_html_e( 'Ready to Strengthen Your Digital Skills?', 'pressbook-green' ); ?></h2>
 			<p><?php esc_html_e( 'Explore available training opportunities and discover practical ways to build your ICT capabilities, whether you are a student, professional, government employee, or an interested member of the public.', 'pressbook-green' ); ?></p>
 			<div class="bicto-actions bicto-actions-center">
-				<a class="bicto-btn bicto-btn-gold" href="<?php echo esc_url( $courses_url ); ?>"><?php esc_html_e( 'Explore Training Courses', 'pressbook-green' ); ?></a>
-				<?php $bicto_register_button( $register_url, 'bicto-btn bicto-btn-outline' ); ?>
+				<a class="bicto-btn bicto-btn-primary" href="<?php echo esc_url( $courses_url ); ?>"><?php esc_html_e( 'Explore Training Courses', 'pressbook-green' ); ?></a>
+				<?php $bicto_register_button( $register_url, 'bicto-btn bicto-btn-secondary' ); ?>
 				<a class="bicto-btn bicto-btn-ghost" href="<?php echo esc_url( $login_url ); ?>"><?php esc_html_e( 'Sign In', 'pressbook-green' ); ?></a>
 			</div>
 		</div>

@@ -291,7 +291,7 @@ function bicto_enqueue_homepage_assets() {
 	if ( ! is_front_page() && ! is_home() ) {
 		return;
 	}
-	wp_enqueue_style( 'pressbook-green-bicto-home', get_stylesheet_directory_uri() . '/assets/css/bicto-home.css', array(), PRESSBOOK_GREEN_VERSION );
-	wp_enqueue_script( 'pressbook-green-bicto-home', get_stylesheet_directory_uri() . '/assets/js/bicto-home.js', array(), PRESSBOOK_GREEN_VERSION, array( 'in_footer' => true, 'strategy' => 'defer' ) );
+	wp_enqueue_style( 'pressbook-green-bicto-home', get_stylesheet_directory_uri() . '/assets/css/bicto-home.css', array(), filemtime( get_stylesheet_directory() . '/assets/css/bicto-home.css' ) );
+	wp_enqueue_script( 'pressbook-green-bicto-home', get_stylesheet_directory_uri() . '/assets/js/bicto-home.js', array(), filemtime( get_stylesheet_directory() . '/assets/js/bicto-home.js' ), array( 'in_footer' => true, 'strategy' => 'defer' ) );
 }
 add_action( 'wp_enqueue_scripts', 'bicto_enqueue_homepage_assets' );
