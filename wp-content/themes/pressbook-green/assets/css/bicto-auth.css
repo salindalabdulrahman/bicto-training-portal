@@ -19,13 +19,13 @@ html.bicto-modal-open { overflow: hidden; padding-right: var(--bicto-scrollbar, 
 
   width: min(460px, calc(100% - 24px));
   max-width: none; max-height: calc(100dvh - 24px);
-  margin: auto; padding: 0; border: 0; background: transparent; overflow: visible;
-  color: var(--m-text);
+  margin: auto; padding: 0; border: 0; background: #fff; overflow: visible;
+  color: var(--m-text); opacity: 1;
   font-family: var(--pb-body-font, 'Roboto Serif', Georgia, serif); line-height: 1.6; box-sizing: border-box;
 }
 .bicto-modal-wide { width: min(720px, calc(100% - 24px)); }
 .bicto-modal *, .bicto-modal *::before, .bicto-modal *::after { box-sizing: border-box; }
-.bicto-modal[open] { animation: bicto-pop .22s cubic-bezier(.2, .8, .2, 1); }
+.bicto-modal[open] { opacity: 1; animation: bicto-pop .22s cubic-bezier(.2, .8, .2, 1) both; }
 .bicto-modal::backdrop { background: rgba(17, 38, 25, .66); backdrop-filter: blur(3px); }
 .bicto-modal[open]::backdrop { animation: bicto-fade .22s ease-out; }
 @keyframes bicto-pop { from { opacity: 0; transform: translateY(16px) scale(.985); } to { opacity: 1; transform: none; } }

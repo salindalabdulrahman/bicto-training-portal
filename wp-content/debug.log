@@ -1,0 +1,1 @@
+[22-Oct-2026 02:09:10 UTC] PHP Deprecated:  Elementor\Modules\GlobalClasses\Atomic_Global_Styles::get_cache_root_key(): Implicitly marking parameter $key as nullable is deprecated, the explicit nullable type must be used instead in /usr/local/lsws/wordpress2/wp-content/plugins/elementor/modules/global-classes/atomic-global-styles.php on line 410

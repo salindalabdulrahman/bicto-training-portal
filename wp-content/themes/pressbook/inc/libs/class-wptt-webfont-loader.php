@@ -546,7 +546,7 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		 */
 		public function get_base_path() {
 			if ( ! $this->base_path ) {
-				$this->base_path = apply_filters( 'wptt_get_local_fonts_base_path', $this->get_filesystem()->wp_content_dir() );
+				$this->base_path = apply_filters( 'wptt_get_local_fonts_base_path', WP_CONTENT_DIR );
 			}
 			return $this->base_path;
 		}
@@ -637,13 +637,22 @@ if ( ! class_exists( 'WPTT_WebFont_Loader' ) ) {
 		protected function get_filesystem() {
 			global $wp_filesystem;
 
-			// If the filesystem has not been instantiated yet, do it here.
+			if ( ! function_exists( 'WP_Filesystem' ) ) {
+				require_once wp_normalize_path( ABSPATH . '/wp-admin/includes/file.php' );
+			}
+
 			if ( ! $wp_filesystem ) {
-				if ( ! function_exists( 'WP_Filesystem' ) ) {
-					require_once wp_normalize_path( ABSPATH . '/wp-admin/includes/file.php' );
-				}
 				WP_Filesystem();
 			}
+
+			$ftp_broken = $wp_filesystem && isset( $wp_filesystem->method ) && 'ftpext' === $wp_filesystem->method && empty( $wp_filesystem->link );
+			if ( ! $wp_filesystem || $ftp_broken ) {
+				if ( ! class_exists( 'WP_Filesystem_Direct' ) ) {
+					require_once ABSPATH . 'wp-admin/includes/class-wp-filesystem-direct.php';
+				}
+				$wp_filesystem = new WP_Filesystem_Direct( array() );
+			}
+
 			return $wp_filesystem;
 		}
 

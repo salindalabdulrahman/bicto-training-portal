@@ -99,7 +99,14 @@ class PressBook_Green_Scripts extends PressBook\Scripts {
 		$fonts_url = esc_url_raw( $fonts_url );
 
 		if ( function_exists( 'wptt_get_webfont_url' ) ) {
-			return wptt_get_webfont_url( $fonts_url );
+			try {
+				$local = wptt_get_webfont_url( $fonts_url );
+				if ( $local ) {
+					return $local;
+				}
+			} catch ( Throwable $e ) {
+				return $fonts_url;
+			}
 		}
 
 		return $fonts_url;
