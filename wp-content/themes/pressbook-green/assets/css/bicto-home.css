@@ -1,0 +1,292 @@
+/* Bicto Digital Training Portal: homepage styles */
+:root {
+  --bicto-navy: #17365d;
+  --bicto-deep-navy: #102a43;
+  --bicto-emerald: #087443;
+  --bicto-emerald-dark: #065f37;
+  --bicto-light-green: #eaf5ee;
+  --bicto-gold: #d9a928;
+  --bicto-bg: #f7f9fc;
+  --bicto-card: #ffffff;
+  --bicto-text: #243447;
+  --bicto-muted: #667085;
+  --bicto-border: #e2e8f0;
+  --bicto-radius: 8px;
+  --bicto-shell: 1160px;
+  --bicto-font: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Replace the parent theme's default blog chrome on the homepage only. */
+body.home .site-header,
+body.home #colophon,
+body.home .site-footer,
+body.page-template-front-page .site-header,
+body.page-template-front-page #colophon,
+body.page-template-front-page .site-footer {
+  display: none !important;
+}
+body.home .site-content,
+body.page-template-front-page .site-content {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+  background: var(--bicto-bg) !important;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+
+.bicto-header, .bicto-home-page, .bicto-footer {
+  font-family: var(--bicto-font);
+  color: var(--bicto-text);
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+.bicto-header *, .bicto-home-page *, .bicto-footer * { box-sizing: border-box; }
+.bicto-header a, .bicto-home-page a, .bicto-footer a { text-decoration: none; }
+.bicto-home-page h1, .bicto-home-page h2, .bicto-home-page h3, .bicto-home-page h4,
+.bicto-footer h2, .bicto-footer h3 { font-family: var(--bicto-font); line-height: 1.25; margin: 0; }
+.bicto-home-page p, .bicto-home-page ul, .bicto-home-page dl { margin: 0; }
+
+a:focus-visible, button:focus-visible, .bicto-btn:focus-visible {
+  outline: 3px solid var(--bicto-gold);
+  outline-offset: 2px;
+}
+
+/* ---------- Header ---------- */
+.bicto-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid var(--bicto-border);
+}
+body.admin-bar .bicto-header { top: 32px; }
+@media (max-width: 782px) { body.admin-bar .bicto-header { top: 46px; } }
+
+.bicto-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: min(var(--bicto-shell), calc(100% - 32px));
+  margin: 0 auto;
+  min-height: 68px;
+}
+.bicto-brand { display: flex; align-items: center; gap: 12px; color: var(--bicto-navy); min-width: 0; }
+.bicto-logo { height: 44px; width: auto; }
+.bicto-brand-mark {
+  display: grid; place-items: center; flex: none;
+  width: 42px; height: 42px; border-radius: 8px;
+  background: var(--bicto-navy); color: #fff; font-weight: 700; letter-spacing: .03em;
+}
+.bicto-brand-copy { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
+.bicto-brand-copy strong { font-size: 1.02rem; color: var(--bicto-navy); }
+.bicto-brand-copy span { font-size: .78rem; color: var(--bicto-muted); }
+
+.bicto-nav { display: flex; align-items: center; gap: 28px; }
+.bicto-nav-links { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
+.bicto-nav-links a {
+  display: block; padding: 8px 12px; border-radius: 6px;
+  color: var(--bicto-text); font-size: .94rem; font-weight: 500;
+  border-bottom: 2px solid transparent;
+}
+.bicto-nav-links a:hover { background: var(--bicto-light-green); color: var(--bicto-emerald-dark); }
+.bicto-nav-links a[aria-current="page"] { color: var(--bicto-navy); font-weight: 700; border-bottom-color: var(--bicto-gold); border-radius: 6px 6px 0 0; }
+.bicto-nav-actions { display: flex; align-items: center; gap: 14px; }
+.bicto-nav-signin { color: var(--bicto-navy); font-weight: 600; font-size: .94rem; padding: 8px 4px; }
+.bicto-nav-signin:hover { color: var(--bicto-emerald-dark); text-decoration: underline !important; }
+
+.bicto-nav-toggle { display: none; }
+
+/* ---------- Buttons ---------- */
+.bicto-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  min-height: 46px; padding: 10px 22px; border-radius: 6px;
+  font-weight: 600; font-size: 1rem; border: 2px solid transparent;
+  cursor: pointer; text-align: center; transition: background-color .15s, color .15s, border-color .15s;
+}
+.bicto-btn-sm { min-height: 40px; padding: 6px 16px; font-size: .94rem; }
+.bicto-btn-gold { background: var(--bicto-gold); color: var(--bicto-deep-navy); }
+.bicto-btn-gold:hover { background: #c79a1f; color: var(--bicto-deep-navy); }
+.bicto-btn-emerald { background: var(--bicto-emerald); color: #fff; }
+.bicto-btn-emerald:hover { background: var(--bicto-emerald-dark); color: #fff; }
+.bicto-btn-outline { background: transparent; color: #fff; border-color: rgba(255, 255, 255, .85); }
+.bicto-btn-outline:hover { background: #fff; color: var(--bicto-navy); }
+.bicto-btn-ghost { background: transparent; color: #fff; text-decoration: underline !important; text-underline-offset: 4px; }
+.bicto-btn-ghost:hover { color: var(--bicto-gold); }
+.bicto-btn small { font-weight: 400; font-size: .75rem; }
+.bicto-btn.is-disabled { opacity: .75; cursor: not-allowed; border-style: dashed; }
+.bicto-btn-emerald.is-disabled { background: #e8edf3; color: var(--bicto-muted); border-color: var(--bicto-border); }
+.bicto-btn-emerald.is-disabled:hover { background: #e8edf3; color: var(--bicto-muted); }
+.bicto-btn-outline.is-disabled:hover { background: transparent; color: #fff; }
+
+/* ---------- Hero ---------- */
+.bicto-hero { background: linear-gradient(180deg, var(--bicto-deep-navy), var(--bicto-navy)); color: #fff; }
+.bicto-hero-inner {
+  display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 56px; align-items: center;
+  width: min(var(--bicto-shell), calc(100% - 32px)); margin: 0 auto; padding: 80px 0;
+}
+.bicto-kicker { text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; font-weight: 600; color: #b8d8c6; margin-bottom: 14px !important; }
+.bicto-hero h1 { font-size: clamp(2rem, 4.4vw, 3.2rem); color: #fff; }
+.bicto-tagline { margin-top: 12px !important; font-size: clamp(1.1rem, 2vw, 1.4rem); color: var(--bicto-gold); font-weight: 600; }
+.bicto-lede { margin-top: 18px !important; max-width: 56ch; font-size: 1.05rem; color: #dbe6f2; }
+.bicto-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+.bicto-actions-center { justify-content: center; align-items: center; }
+.bicto-signin-line { margin-top: 18px !important; color: #dbe6f2; font-size: .95rem; }
+.bicto-signin-line a { color: #fff; font-weight: 700; text-decoration: underline !important; text-underline-offset: 3px; }
+.bicto-signin-line a:hover { color: var(--bicto-gold); }
+
+.bicto-hero-panel {
+  background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .22);
+  border-left: 4px solid var(--bicto-emerald); border-radius: var(--bicto-radius); padding: 28px;
+}
+.bicto-hero-panel h2 { font-size: 1.2rem; color: #fff; margin-bottom: 14px; }
+.bicto-hero-panel ul { list-style: none; padding: 0; display: grid; gap: 10px; }
+.bicto-hero-panel li { position: relative; padding-left: 26px; color: #eef3f9; }
+.bicto-hero-panel li::before {
+  content: ""; position: absolute; left: 0; top: .5em; width: 12px; height: 7px;
+  border-left: 2px solid #7fd0a4; border-bottom: 2px solid #7fd0a4; transform: rotate(-45deg);
+}
+.bicto-hero-panel p { margin-top: 18px !important; font-size: .88rem; color: #b9c9db; }
+
+/* ---------- Sections ---------- */
+.bicto-section { padding: 80px 0; background: var(--bicto-bg); }
+.bicto-section-alt { background: #fff; border-top: 1px solid var(--bicto-border); border-bottom: 1px solid var(--bicto-border); }
+.section-shell { width: min(var(--bicto-shell), calc(100% - 32px)); margin: 0 auto; }
+.bicto-section-header { max-width: 720px; margin: 0 auto 44px; text-align: center; }
+.bicto-section-header.bicto-left { margin-left: 0; text-align: left; max-width: 820px; }
+.eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; font-weight: 700; color: var(--bicto-emerald); margin-bottom: 8px !important; }
+.bicto-section-header h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--bicto-navy); }
+.bicto-section-header p:not(.eyebrow) { margin-top: 14px !important; color: var(--bicto-muted); font-size: 1.05rem; }
+
+/* Tracks */
+.bicto-track-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.bicto-track {
+  display: flex; flex-direction: column; background: var(--bicto-card);
+  border: 1px solid var(--bicto-border); border-top: 3px solid var(--bicto-emerald);
+  border-radius: var(--bicto-radius); padding: 28px; box-shadow: 0 1px 2px rgba(16, 42, 67, .05);
+  transition: border-color .15s, box-shadow .15s;
+}
+.bicto-track:hover, .bicto-track:focus-within { border-color: var(--bicto-navy); border-top-color: var(--bicto-emerald); box-shadow: 0 6px 18px rgba(16, 42, 67, .08); }
+.bicto-track-icon, .bicto-objective-icon {
+  display: grid; place-items: center; width: 52px; height: 52px; border-radius: 8px;
+  background: var(--bicto-light-green); color: var(--bicto-emerald); margin-bottom: 18px;
+}
+.bicto-track h3 { font-size: 1.2rem; color: var(--bicto-navy); }
+.bicto-track > p { margin-top: 10px !important; color: var(--bicto-muted); }
+.bicto-track ul { margin-top: 16px !important; padding: 0; list-style: none; display: grid; gap: 6px; flex: 1; }
+.bicto-track li { position: relative; padding-left: 18px; font-size: .94rem; }
+.bicto-track li::before { content: ""; position: absolute; left: 0; top: .65em; width: 6px; height: 6px; border-radius: 50%; background: var(--bicto-gold); }
+.bicto-link { display: inline-block; margin-top: 20px; font-weight: 700; color: var(--bicto-emerald-dark); }
+.bicto-link::after { content: " \2192"; }
+.bicto-link:hover { color: var(--bicto-navy); text-decoration: underline !important; text-underline-offset: 3px; }
+
+/* Objectives */
+.bicto-objectives { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 8px; }
+.bicto-objective { padding: 24px; border: 1px solid var(--bicto-border); border-radius: var(--bicto-radius); background: var(--bicto-bg); }
+.bicto-objective h3 { font-size: 1.1rem; color: var(--bicto-navy); }
+.bicto-objective p { margin-top: 8px !important; color: var(--bicto-muted); font-size: .96rem; }
+
+/* Calendar and announcements */
+.bicto-two-col { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.bicto-col-title { display: flex; align-items: center; gap: 10px; font-size: 1.15rem; color: var(--bicto-navy); margin-bottom: 18px !important; }
+.bicto-dot { width: 12px; height: 12px; border-radius: 3px; flex: none; }
+.bicto-dot-green { background: var(--bicto-emerald); }
+.bicto-dot-gold { background: var(--bicto-gold); }
+.bicto-card-list { list-style: none; padding: 0; display: grid; gap: 16px; }
+.bicto-card { background: var(--bicto-card); border: 1px solid var(--bicto-border); border-radius: var(--bicto-radius); padding: 22px; }
+.bicto-event { border-left: 4px solid var(--bicto-emerald); }
+.bicto-announcement { border-left: 4px solid var(--bicto-gold); }
+.bicto-card h4 { font-size: 1.08rem; margin-top: 6px !important; }
+.bicto-card h4 a { color: var(--bicto-navy); }
+.bicto-card h4 a:hover { color: var(--bicto-emerald-dark); text-decoration: underline !important; }
+.bicto-card p { margin-top: 10px !important; color: var(--bicto-muted); font-size: .95rem; }
+.bicto-card-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.bicto-tag { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: .75rem; font-weight: 700; background: var(--bicto-light-green); color: var(--bicto-emerald-dark); }
+.bicto-tag-access { background: #eef2f7; color: var(--bicto-navy); }
+.bicto-access-public { background: var(--bicto-light-green); color: var(--bicto-emerald-dark); }
+.bicto-access-government, .bicto-access-approved { background: #fff6dc; color: #6b5200; }
+.bicto-meta { display: grid; gap: 4px; margin-top: 12px !important; font-size: .92rem; }
+.bicto-meta div { display: flex; gap: 8px; }
+.bicto-meta dt { flex: none; width: 74px; font-weight: 700; color: var(--bicto-navy); }
+.bicto-meta dd { margin: 0; }
+.bicto-card-links { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.bicto-card-links .bicto-link, .bicto-announcement .bicto-link { margin-top: 4px; }
+.bicto-date { font-size: .82rem; font-weight: 600; color: var(--bicto-muted); }
+.bicto-empty { background: #fff; border: 1px dashed #c4cfdd; border-radius: var(--bicto-radius); padding: 28px; text-align: center; }
+.bicto-empty p { color: var(--bicto-muted); }
+
+/* CTA */
+.bicto-cta { background: var(--bicto-emerald-dark); color: #fff; padding: 72px 16px; }
+.bicto-cta-inner { max-width: 760px; margin: 0 auto; text-align: center; }
+.bicto-cta h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); color: #fff; }
+.bicto-cta p { margin-top: 14px !important; color: #e3f3ea; font-size: 1.05rem; }
+.bicto-cta .bicto-actions { margin-top: 28px; }
+.bicto-cta .bicto-btn-outline:hover { color: var(--bicto-emerald-dark); }
+
+/* Footer */
+.bicto-footer { background: var(--bicto-deep-navy); color: #c9d6e4; padding: 56px 0 0; }
+.bicto-footer-grid {
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 36px;
+  width: min(var(--bicto-shell), calc(100% - 32px)); margin: 0 auto; padding-bottom: 40px;
+}
+.bicto-footer h2 { font-size: 1.2rem; color: #fff; margin-bottom: 10px; }
+.bicto-footer h3 { font-size: .85rem; text-transform: uppercase; letter-spacing: .08em; color: var(--bicto-gold); margin-bottom: 14px; }
+.bicto-footer p { margin: 0 0 8px; font-size: .94rem; }
+.bicto-footer-column { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
+.bicto-footer-column a { color: #e6eef7; font-size: .94rem; }
+.bicto-footer-column a:hover { color: #fff; text-decoration: underline !important; }
+.bicto-footer-muted { font-size: .9rem; color: #9fb2c6; }
+.bicto-footer-bottom { border-top: 1px solid rgba(255, 255, 255, .14); padding: 18px 16px; text-align: center; font-size: .85rem; color: #9fb2c6; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .bicto-track-grid, .bicto-objectives { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .bicto-two-col { grid-template-columns: 1fr; }
+  .bicto-footer-grid { grid-template-columns: 1fr 1fr; }
+  .bicto-hero-inner { gap: 36px; padding: 64px 0; }
+}
+
+@media (max-width: 900px) {
+  .bicto-hero-inner { grid-template-columns: 1fr; }
+
+  .bicto-nav-toggle {
+    display: inline-grid; place-items: center; width: 46px; height: 46px; padding: 0;
+    background: #fff; border: 1px solid var(--bicto-border); border-radius: 6px; cursor: pointer; color: var(--bicto-navy);
+  }
+  .bicto-burger, .bicto-burger::before, .bicto-burger::after {
+    display: block; width: 20px; height: 2px; background: currentColor; border-radius: 2px; position: relative; content: "";
+  }
+  .bicto-burger::before { position: absolute; top: -6px; }
+  .bicto-burger::after { position: absolute; top: 6px; }
+
+  .bicto-nav {
+    flex-direction: column; align-items: stretch; gap: 12px;
+    position: absolute; left: 0; right: 0; top: 100%;
+    background: #fff; border-bottom: 1px solid var(--bicto-border); padding: 12px 16px 20px;
+  }
+  .bicto-js .bicto-nav { display: none; }
+  .bicto-js .bicto-nav.is-open { display: flex; }
+  .bicto-nav-links { flex-direction: column; }
+  .bicto-nav-links a { padding: 12px; min-height: 44px; }
+  .bicto-nav-links a[aria-current="page"] { border-bottom-color: transparent; border-left: 3px solid var(--bicto-gold); border-radius: 0 6px 6px 0; background: var(--bicto-light-green); }
+  .bicto-nav-actions { flex-direction: column; align-items: stretch; gap: 10px; }
+  .bicto-nav-signin { text-align: center; padding: 12px; border: 1px solid var(--bicto-border); border-radius: 6px; }
+  .bicto-nav-actions .bicto-btn { width: 100%; }
+}
+
+@media (max-width: 640px) {
+  .bicto-section { padding: 56px 0; }
+  .bicto-hero-inner { padding: 48px 0; }
+  .bicto-track-grid, .bicto-objectives, .bicto-footer-grid { grid-template-columns: 1fr; }
+  .bicto-actions .bicto-btn { width: 100%; }
+  .bicto-brand-copy span { display: none; }
+  .bicto-brand-copy strong { font-size: .95rem; }
+  .bicto-meta div { flex-direction: column; gap: 0; }
+  .bicto-meta dt { width: auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .bicto-btn, .bicto-track { transition: none; }
+}

@@ -112,3 +112,4 @@ add_filter( 'pressbook_welcome_menu_title', 'pressbook_green_welcome_menu_title'
  * Recommended plugins.
  */
 require get_stylesheet_directory() . '/inc/recommended-plugins.php';
+require get_stylesheet_directory() . '/inc/bicto-portal.php';

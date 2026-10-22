@@ -1078,3 +1078,251 @@ Stack trace:
 #27 {main}
   thrown in /usr/local/lsws/wordpress2/wp-admin/includes/class-wp-filesystem-ftpext.php on line 492
 2026-10-22 07:34:33.030088 [NOTICE] [21135] [127.0.0.1:50764-4#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:47:29.406339 [NOTICE] [21130] [127.0.0.1:47424#wordpress2] [STDERR] PHP Fatal error:  Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /usr/local/lsws/wordpress2/wp-admin/includes/class-wp-filesystem-ftpext.php:492
+Stack trace:
+#0 /usr/local/lsws/wordpress2/wp-admin/includes/class-wp-filesystem-ftpext.php(492): ftp_nlist()
+#1 /usr/local/lsws/wordpress2/wp-admin/includes/class-wp-filesystem-base.php(253): WP_Filesystem_FTPext->exists()
+#2 /usr/local/lsws/wordpress2/wp-admin/includes/class-wp-filesystem-base.php(97): WP_Filesystem_Base->find_folder()
+#3 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(549): WP_Filesystem_Base->wp_content_dir()
+#4 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(590): WPTT_WebFont_Loader->get_base_path()
+#5 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(498): WPTT_WebFont_Loader->get_fonts_folder()
+#6 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(537): WPTT_WebFont_Loader->get_local_stylesheet_path()
+#7 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(142): WPTT_WebFont_Loader->local_file_exists()
+#8 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(709): WPTT_WebFont_Loader->get_url()
+#9 /usr/local/lsws/wordpress2/wp-content/themes/pressbook-green/inc/classes/class-pressbook-green-scripts.php(102): wptt_get_webfont_url()
+#10 /usr/local/lsws/wordpress2/wp-content/themes/pressbook-green/inc/classes/class-pressbook-green-scripts.php(49): PressBook_Green_Scripts::fonts_url()
+#11 /usr/local/lsws/wordpress2/wp-includes/class-wp-hook.php(353): PressBook_Green_Scripts->enqueue_scripts()
+#12 /usr/local/lsws/wordpress2/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#13 /usr/local/lsws/wordpress2/wp-includes/plugin.php(523): WP_Hook->do_action()
+#14 /usr/local/lsws/wordpress2/wp-includes/script-loader.php(2340): do_action()
+#15 
+2026-10-22 07:47:29.409454 [NOTICE] [21130] [127.0.0.1:47424#wordpress2] [STDERR] /usr/local/lsws/wordpress2/wp-includes/class-wp-hook.php(353): wp_enqueue_scripts()
+#16 /usr/local/lsws/wordpress2/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#17 /usr/local/lsws/wordpress2/wp-includes/plugin.php(523): WP_Hook->do_action()
+#18 /usr/local/lsws/wordpress2/wp-includes/general-template.php(3441): do_action()
+#19 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/header.php(18): wp_head()
+#20 /usr/local/lsws/wordpress2/wp-includes/template.php(880): require_once('...')
+#21 /usr/local/lsws/wordpress2/wp-includes/template.php(815): load_template()
+#22 /usr/local/lsws/wordpress2/wp-includes/general-template.php(48): locate_template()
+#23 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/page.php(17): get_header()
+#24 /usr/local/lsws/wordpress2/wp-includes/template-loader.php(132): include('...')
+#25 /usr/local/lsws/wordpress2/wp-blog-header.php(19): require_once('...')
+#26 /usr/local/lsws/wordpress2/index.php(17): require('...')
+#27 {main}
+  thrown in /usr/local/lsws/wordpress2/wp-admin/includes/class-wp-filesystem-ftpext.php on line 492
+2026-10-22 07:47:31.463505 [NOTICE] [21130] [127.0.0.1:47424-1#wordpress2:lsapi] [STDERR] PHP Fatal error:  Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /usr/local/lsws/wordpress2/wp-admin/includes/class-wp-filesystem-ftpext.php:492
+Stack trace:
+#0 /usr/local/lsws/wordpress2/wp-admin/includes/class-wp-filesystem-ftpext.php(492): ftp_nlist()
+#1 /usr/local/lsws/wordpress2/wp-admin/includes/class-wp-filesystem-base.php(253): WP_Filesystem_FTPext->exists()
+#2 /usr/local/lsws/wordpress2/wp-admin/includes/class-wp-filesystem-base.php(97): WP_Filesystem_Base->find_folder()
+#3 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(549): WP_Filesystem_Base->wp_content_dir()
+#4 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(590): WPTT_WebFont_Loader->get_base_path()
+#5 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(498): WPTT_WebFont_Loader->get_fonts_folder()
+#6 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(537): WPTT_WebFont_Loader->get_local_stylesheet_path()
+#7 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(142): WPTT_WebFont_Loader->local_file_exists()
+#8 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(709): WPTT_WebFont_Loader->get_url()
+#9 /usr/local/lsws/wordpress2/wp-content/themes/pressbook-green/inc/classes/class-pressbook-green-scripts.php(102): wptt_get_webfont_url()
+#10 /usr/local/lsws/wordpress2/wp-content/themes/pressbook-green/inc/classes/class-pressbook-green-scripts.php(49): PressBook_Green_Scripts::fonts_url()
+#11 /usr/local/lsws/wordpress2/wp-includes/class-wp-hook.php(353): PressBook_Green_Scripts->enqueue_scripts()
+#12 /usr/local/lsws/wordpress2/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#13 /usr/local/lsws/wordpress2/wp-includes/plugin.php(523): WP_Hook->do_action()
+#14 /usr/local/lsws/wordpress2/wp-includes/script-loader.php(2340): do_action()
+#15 
+2026-10-22 07:47:31.463651 [NOTICE] [21130] [127.0.0.1:47424-1#wordpress2:lsapi] [STDERR] /usr/local/lsws/wordpress2/wp-includes/class-wp-hook.php(353): wp_enqueue_scripts()
+#16 /usr/local/lsws/wordpress2/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#17 /usr/local/lsws/wordpress2/wp-includes/plugin.php(523): WP_Hook->do_action()
+#18 /usr/local/lsws/wordpress2/wp-includes/general-template.php(3441): do_action()
+#19 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/header.php(18): wp_head()
+#20 /usr/local/lsws/wordpress2/wp-includes/template.php(880): require_once('...')
+#21 /usr/local/lsws/wordpress2/wp-includes/template.php(815): load_template()
+#22 /usr/local/lsws/wordpress2/wp-includes/general-template.php(48): locate_template()
+#23 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/page.php(17): get_header()
+#24 /usr/local/lsws/wordpress2/wp-includes/template-loader.php(132): include('...')
+#25 /usr/local/lsws/wordpress2/wp-blog-header.php(19): require_once('...')
+#26 /usr/local/lsws/wordpress2/index.php(17): require('...')
+#27 {main}
+  thrown in /usr/local/lsws/wordpress2/wp-admin/includes/class-wp-filesystem-ftpext.php on line 492
+2026-10-22 07:48:17.232278 [NOTICE] [21130] [127.0.0.1:47440-1#wordpress2] [STDERR] PHP Fatal error:  Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /usr/local/lsws/wordpress2/wp-admin/includes/class-wp-filesystem-ftpext.php:492
+Stack trace:
+#0 /usr/local/lsws/wordpress2/wp-admin/includes/class-wp-filesystem-ftpext.php(492): ftp_nlist()
+#1 /usr/local/lsws/wordpress2/wp-admin/includes/class-wp-filesystem-base.php(253): WP_Filesystem_FTPext->exists()
+#2 /usr/local/lsws/wordpress2/wp-admin/includes/class-wp-filesystem-base.php(97): WP_Filesystem_Base->find_folder()
+#3 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(549): WP_Filesystem_Base->wp_content_dir()
+#4 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(590): WPTT_WebFont_Loader->get_base_path()
+#5 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(498): WPTT_WebFont_Loader->get_fonts_folder()
+#6 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(537): WPTT_WebFont_Loader->get_local_stylesheet_path()
+#7 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(142): WPTT_WebFont_Loader->local_file_exists()
+#8 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/inc/libs/class-wptt-webfont-loader.php(709): WPTT_WebFont_Loader->get_url()
+#9 /usr/local/lsws/wordpress2/wp-content/themes/pressbook-green/inc/classes/class-pressbook-green-scripts.php(102): wptt_get_webfont_url()
+#10 /usr/local/lsws/wordpress2/wp-content/themes/pressbook-green/inc/classes/class-pressbook-green-scripts.php(49): PressBook_Green_Scripts::fonts_url()
+#11 /usr/local/lsws/wordpress2/wp-includes/class-wp-hook.php(353): PressBook_Green_Scripts->enqueue_scripts()
+#12 /usr/local/lsws/wordpress2/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#13 /usr/local/lsws/wordpress2/wp-includes/plugin.php(523): WP_Hook->do_action()
+#14 /usr/local/lsws/wordpress2/wp-includes/script-loader.php(2340): do_action()
+#15 
+2026-10-22 07:48:17.232641 [NOTICE] [21130] [127.0.0.1:47440-1#wordpress2] [STDERR] /usr/local/lsws/wordpress2/wp-includes/class-wp-hook.php(353): wp_enqueue_scripts()
+#16 /usr/local/lsws/wordpress2/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters()
+#17 /usr/local/lsws/wordpress2/wp-includes/plugin.php(523): WP_Hook->do_action()
+#18 /usr/local/lsws/wordpress2/wp-includes/general-template.php(3441): do_action()
+#19 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/header.php(18): wp_head()
+#20 /usr/local/lsws/wordpress2/wp-includes/template.php(880): require_once('...')
+#21 /usr/local/lsws/wordpress2/wp-includes/template.php(815): load_template()
+#22 /usr/local/lsws/wordpress2/wp-includes/general-template.php(48): locate_template()
+#23 /usr/local/lsws/wordpress2/wp-content/themes/pressbook/page.php(17): get_header()
+#24 /usr/local/lsws/wordpress2/wp-includes/template-loader.php(132): include('...')
+#25 /usr/local/lsws/wordpress2/wp-blog-header.php(19): require_once('...')
+#26 /usr/local/lsws/wordpress2/index.php(17): require('...')
+#27 {main}
+  thrown in /usr/local/lsws/wordpress2/wp-admin/includes/class-wp-filesystem-ftpext.php on line 492
+2026-10-22 07:49:25.566471 [NOTICE] [21133] [127.0.0.1:35656#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:27.207616 [NOTICE] [21133] [127.0.0.1:35656-8#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:29.980279 [NOTICE] [21133] [127.0.0.1:35656-9#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:30.008391 [NOTICE] [21130] [127.0.0.1:35658-3#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:30.061250 [NOTICE] [21132] [127.0.0.1:54788#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:30.061213 [NOTICE] [21134] [127.0.0.1:54802#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:30.061325 [NOTICE] [21135] [127.0.0.1:54782#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:30.161302 [NOTICE] [21135] [127.0.0.1:54782-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:30.172544 [NOTICE] [21132] [127.0.0.1:54788-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:30.234726 [NOTICE] [21135] [127.0.0.1:54782-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:30.836608 [NOTICE] [21135] [127.0.0.1:54782-3#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:30.931242 [NOTICE] [21132] [127.0.0.1:54788-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:30.966873 [NOTICE] [21135] [127.0.0.1:54782-4#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:30.998180 [NOTICE] [21134] [127.0.0.1:54802-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:31.068829 [NOTICE] [21132] [127.0.0.1:54788-3#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:31.135740 [NOTICE] [21134] [127.0.0.1:54802-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:33.146457 [NOTICE] [21134] [127.0.0.1:54802-3#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:33.511581 [NOTICE] [21134] [127.0.0.1:54802-4#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:34.489498 [NOTICE] [21134] [127.0.0.1:54802-5#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:34.493422 [NOTICE] [21135] [127.0.0.1:54782-5#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:34.536526 [NOTICE] [21132] [127.0.0.1:54788-4#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:34.538800 [NOTICE] [21130] [127.0.0.1:35658-4#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:34.542307 [NOTICE] [21133] [127.0.0.1:35656-10#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:34.568664 [NOTICE] [21133] [127.0.0.1:54806#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:34.587423 [NOTICE] [21134] [127.0.0.1:54802-6#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:34.665478 [NOTICE] [21133] [127.0.0.1:35656-11#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:34.696604 [NOTICE] [21130] [127.0.0.1:35658-5#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:34.795912 [NOTICE] [21133] [127.0.0.1:35656-12#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:34.823149 [NOTICE] [21133] [127.0.0.1:54806-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:34.936781 [NOTICE] [21133] [127.0.0.1:35656-13#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:49:35.277468 [NOTICE] [21133] [127.0.0.1:35656-14#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:25.823782 [NOTICE] [21133] [127.0.0.1:43078#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:26.473122 [NOTICE] [21133] [127.0.0.1:43078-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:27.401188 [NOTICE] [21133] [127.0.0.1:43078-3#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:27.442263 [NOTICE] [21137] [127.0.0.1:43076#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:27.473285 [NOTICE] [21132] [127.0.0.1:43094#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:27.479135 [NOTICE] [21135] [127.0.0.1:43100#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:27.482097 [NOTICE] [21133] [127.0.0.1:43106#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:27.482305 [NOTICE] [21131] [127.0.0.1:43116#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:27.678245 [NOTICE] [21131] [127.0.0.1:43116-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:27.696447 [NOTICE] [21133] [127.0.0.1:43078-4#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:27.700028 [NOTICE] [21137] [127.0.0.1:43076-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:27.820812 [NOTICE] [21137] [127.0.0.1:43076-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:27.835727 [NOTICE] [21131] [127.0.0.1:43116-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:27.944237 [NOTICE] [21131] [127.0.0.1:43116-3#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:28.067598 [NOTICE] [21137] [127.0.0.1:43076-3#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:37.758327 [NOTICE] [21134] [127.0.0.1:48670#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:38.328051 [NOTICE] [21134] [127.0.0.1:48670-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:38.413793 [NOTICE] [21135] [127.0.0.1:48682-1#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:38.737786 [NOTICE] [21135] [127.0.0.1:48682-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:40.359327 [NOTICE] [21135] [127.0.0.1:48682-3#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:40.368552 [NOTICE] [21134] [127.0.0.1:60842#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:40.427537 [NOTICE] [21136] [127.0.0.1:60852#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:40.427981 [NOTICE] [21136] [127.0.0.1:60868#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:40.481894 [NOTICE] [21135] [127.0.0.1:48682-4#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:40.579236 [NOTICE] [21136] [127.0.0.1:60852-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:40.669442 [NOTICE] [21135] [127.0.0.1:48682-5#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:40.744417 [NOTICE] [21136] [127.0.0.1:60852-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:44.653814 [NOTICE] [21136] [127.0.0.1:60852-3#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:45.786327 [NOTICE] [21133] [127.0.0.1:60902#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:46.007119 [NOTICE] [21136] [127.0.0.1:60852-4#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:46.971392 [NOTICE] [21136] [127.0.0.1:60852-5#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:46.998128 [NOTICE] [21130] [127.0.0.1:60914#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:47.050734 [NOTICE] [21134] [127.0.0.1:60926#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:47.076844 [NOTICE] [21131] [127.0.0.1:60940#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:47.253014 [NOTICE] [21134] [127.0.0.1:60926-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:47.366677 [NOTICE] [21131] [127.0.0.1:60940-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:47.448631 [NOTICE] [21134] [127.0.0.1:60926-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:47.507574 [NOTICE] [21131] [127.0.0.1:60940-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:51:50.072196 [NOTICE] [21135] [127.0.0.1:60884#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:51:50.095720 [NOTICE] [21136] [127.0.0.1:60882#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:51:56.079011 [NOTICE] [21130] [127.0.0.1:60956#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:51:57.003161 [NOTICE] [21131] [127.0.0.1:60962#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:52:00.153695 [NOTICE] [21133] [127.0.0.1:47274#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:52:00.808520 [NOTICE] [21133] [127.0.0.1:47274-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:52:01.694726 [NOTICE] [21133] [127.0.0.1:47274-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:52:01.712321 [NOTICE] [21132] [127.0.0.1:47280#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:52:01.766760 [NOTICE] [21134] [127.0.0.1:47308#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:52:01.777749 [NOTICE] [21137] [127.0.0.1:47324#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:52:01.857027 [NOTICE] [21134] [127.0.0.1:47308-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:52:01.903658 [NOTICE] [21137] [127.0.0.1:47324-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:52:01.951231 [NOTICE] [21132] [127.0.0.1:47280-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:52:01.980894 [NOTICE] [21134] [127.0.0.1:47308-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:52:02.030783 [NOTICE] [21137] [127.0.0.1:47324-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:52:02.063642 [NOTICE] [21133] [127.0.0.1:47274-3#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:52:02.156329 [NOTICE] [21137] [127.0.0.1:47324-3#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:52:11.088531 [NOTICE] [21135] [127.0.0.1:47296#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:52:11.088659 [NOTICE] [21130] [127.0.0.1:47286#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:52:21.021533 [NOTICE] [21135] [127.0.0.1:47296#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:52:21.021695 [NOTICE] [21130] [127.0.0.1:47286#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:52:31.054325 [NOTICE] [21135] [127.0.0.1:47296#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:52:31.055480 [NOTICE] [21130] [127.0.0.1:47286#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:52:41.093391 [NOTICE] [21130] [127.0.0.1:47286#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:52:41.093546 [NOTICE] [21135] [127.0.0.1:47296#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:52:51.041236 [NOTICE] [21130] [127.0.0.1:47286#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:52:51.041309 [NOTICE] [21135] [127.0.0.1:47296#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:53:01.083531 [NOTICE] [21130] [127.0.0.1:47286#wordpress2] ExtConn timed out while processing.
+2026-10-22 07:53:01.083547 [NOTICE] [21135] [127.0.0.1:47296#wordpress2] ExtConn timed out while processing.
+2026-10-22 07:53:01.094036 [NOTICE] [21135] [127.0.0.1:47296#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:53:01.094031 [NOTICE] [21130] [127.0.0.1:47286#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:53:46.236834 [NOTICE] [21132] [127.0.0.1:39490#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:53:46.901933 [NOTICE] [21132] [127.0.0.1:39490-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:53:48.779390 [NOTICE] [21132] [127.0.0.1:39490-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:53:48.795561 [NOTICE] [21130] [127.0.0.1:39504#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:53:48.828320 [NOTICE] [21137] [127.0.0.1:39508#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:53:48.837411 [NOTICE] [21133] [127.0.0.1:39532#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:53:49.179931 [NOTICE] [21137] [127.0.0.1:39508-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:53:49.226284 [NOTICE] [21133] [127.0.0.1:39532-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:53:49.322900 [NOTICE] [21130] [127.0.0.1:39504-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:53:49.370424 [NOTICE] [21133] [127.0.0.1:39532-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:53:49.443843 [NOTICE] [21137] [127.0.0.1:39508-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:53:49.497632 [NOTICE] [21133] [127.0.0.1:39532-3#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:53:49.540752 [NOTICE] [21130] [127.0.0.1:39504-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:53:54.028706 [NOTICE] [21136] [127.0.0.1:39478#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:53:58.010751 [NOTICE] [21132] [127.0.0.1:39518#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:53:58.065240 [NOTICE] [21131] [127.0.0.1:39538#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:54:08.049423 [NOTICE] [21132] [127.0.0.1:39518#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:54:08.099780 [NOTICE] [21131] [127.0.0.1:39538#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:54:18.032683 [NOTICE] [21131] [127.0.0.1:39538#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:54:18.085472 [NOTICE] [21132] [127.0.0.1:39518#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:54:28.020969 [NOTICE] [21132] [127.0.0.1:39518#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:54:28.067951 [NOTICE] [21131] [127.0.0.1:39538#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:54:38.009198 [NOTICE] [21131] [127.0.0.1:39538#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:54:38.060579 [NOTICE] [21132] [127.0.0.1:39518#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:54:47.748268 [NOTICE] [21131] [127.0.0.1:33802#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:54:48.003612 [NOTICE] [21132] [127.0.0.1:39518#wordpress2] ExtConn timed out while processing.
+2026-10-22 07:54:48.014013 [NOTICE] [21132] [127.0.0.1:39518#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:54:48.049482 [NOTICE] [21131] [127.0.0.1:39538#wordpress2] ExtConn timed out while processing.
+2026-10-22 07:54:58.075413 [NOTICE] [21131] [127.0.0.1:39538#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:55:08.014338 [NOTICE] [21131] [127.0.0.1:39538#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:55:18.053906 [NOTICE] [21131] [127.0.0.1:39538#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:55:28.096007 [NOTICE] [21131] [127.0.0.1:39538#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:55:38.036729 [NOTICE] [21131] [127.0.0.1:39538#wordpress2] No request delivery notification has been received from LSAPI application, possible dead lock.
+2026-10-22 07:55:48.070007 [NOTICE] [21131] [127.0.0.1:39538#wordpress2] ExtConn timed out while processing.
+2026-10-22 07:55:48.078892 [NOTICE] [21131] [127.0.0.1:39538#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:56:48.711572 [NOTICE] [21130] [127.0.0.1:42780#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:58:49.739269 [NOTICE] [21130] [127.0.0.1:37790#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:59:36.740086 [NOTICE] [21133] [127.0.0.1:43730#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:59:38.928986 [NOTICE] [21133] [127.0.0.1:43730-6#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:59:40.065853 [NOTICE] [21133] [127.0.0.1:43730-7#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:59:40.102109 [NOTICE] [21136] [127.0.0.1:43738-4#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:59:40.132739 [NOTICE] [21137] [127.0.0.1:36870#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:59:40.134296 [NOTICE] [21133] [127.0.0.1:36880#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:59:40.143728 [NOTICE] [21130] [127.0.0.1:36884#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:59:40.163671 [NOTICE] [21131] [127.0.0.1:36894#wordpress2] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:59:40.327497 [NOTICE] [21130] [127.0.0.1:36884-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:59:40.344660 [NOTICE] [21133] [127.0.0.1:43730-8#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:59:40.427914 [NOTICE] [21131] [127.0.0.1:36894-1#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:59:40.480467 [NOTICE] [21130] [127.0.0.1:36884-2#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:59:40.559062 [NOTICE] [21133] [127.0.0.1:43730-9#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:59:40.666135 [NOTICE] [21130] [127.0.0.1:36884-3#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
+2026-10-22 07:59:40.766112 [NOTICE] [21133] [127.0.0.1:43730-10#wordpress2:lsapi] [STDERR] PHP Warning:  Constant FS_METHOD already defined in /usr/local/lsws/wordpress2/wp-config.php on line 95
